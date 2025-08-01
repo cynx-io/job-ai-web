@@ -50,13 +50,15 @@ export default function HomePageNavigationBar() {
       </section>
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger className="sm:hidden">
-          <Menu size={32} className={`cursor-pointer ${open ? 'hidden' : ''}`} />
+          <Menu
+            size={32}
+            className={`cursor-pointer ${open ? "hidden" : ""}`}
+          />
         </SheetTrigger>
         <SheetContent>
           <SheetHeader>
             <SheetTitle className="text-xl">Logoaaaaa</SheetTitle>
             <SheetDescription className="flex flex-col gap-2 mt-4 text-left text-lg">
-             
               <Link href={"#"} className={navStyle}>
                 How It Works
               </Link>
