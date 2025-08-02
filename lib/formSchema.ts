@@ -1,8 +1,9 @@
-"use client"
+"use client";
 
-import { z } from "zod"
+import { z } from "zod";
 
-const linkedInRegex = /^https?:\/\/(www\.)?linkedin\.com\/in\/[a-zA-Z0-9-_%]+\/?$/
+const linkedInRegex =
+  /^https?:\/\/(www\.)?linkedin\.com\/in\/[a-zA-Z0-9-_%]+\/?$/;
 
 // home page form schema
 export const homePageFormSchema = z.object({
@@ -52,6 +53,3 @@ export const studentFormSchema = z
     message: "End year must be greater than or equal to start year",
     path: ["endYear"],
   });
-
-
-

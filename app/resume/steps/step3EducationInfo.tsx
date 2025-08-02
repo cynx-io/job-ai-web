@@ -36,8 +36,8 @@ export default function Step3EducationInfo({
       school: defaultValues.school || "",
       degree: defaultValues.degree || "",
       fieldOfStudy: defaultValues.fieldOfStudy || "",
-      startYear: defaultValues.startYear as number || undefined,
-      endYear: defaultValues.endYear as number || undefined,
+      startYear: (defaultValues.startYear as number) || undefined,
+      endYear: (defaultValues.endYear as number) || undefined,
     },
   });
 

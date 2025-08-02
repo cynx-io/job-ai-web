@@ -108,7 +108,7 @@ function HomePageHero() {
           <h4>Over 10000+ users</h4>
         </div>
       </div>
-      <CopyableText text="https://www.linkedin.com/in/christopher-hu-921ab421b/"/>
+      <CopyableText text="https://www.linkedin.com/in/christopher-hu-921ab421b/" />
       <div className="w-full sm:w-[80%] md:w-[60%]">
         <HomePageForm />
       </div>
@@ -117,7 +117,7 @@ function HomePageHero() {
 }
 
 function HomePageForm() {
-  const router = useRouter()
+  const router = useRouter();
   const form = useForm<z.infer<typeof homePageFormSchema>>({
     resolver: zodResolver(homePageFormSchema),
     defaultValues: {
@@ -128,7 +128,7 @@ function HomePageForm() {
   // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof homePageFormSchema>) {
     console.log(values);
-    router.push('/resume')
+    router.push("/resume");
   }
   return (
     <Form {...form}>
@@ -149,7 +149,9 @@ function HomePageForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full">Create Your ATS Friendly Resume</Button>
+        <Button type="submit" className="w-full">
+          Create Your ATS Friendly Resume
+        </Button>
       </form>
     </Form>
   );
@@ -522,7 +524,7 @@ function CopyableText({ text }: { text: string }) {
       setCopied(true);
       setTimeout(() => setCopied(false), 1500); // reset after 1.5s
     } catch (err) {
-      console.error('Failed to copy: ', err);
+      console.error("Failed to copy: ", err);
     }
   };
 
@@ -533,7 +535,7 @@ function CopyableText({ text }: { text: string }) {
         onClick={copyToClipboard}
         className="text-blue-600 hover:underline text-sm"
       >
-        {copied ? 'Copied!' : 'Copy'}
+        {copied ? "Copied!" : "Copy"}
       </button>
     </div>
   );

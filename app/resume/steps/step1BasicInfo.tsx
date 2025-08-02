@@ -65,7 +65,7 @@ export default function Step1BasicInfo({
                 >
                   <SelectTrigger className="w-full">
                     <SelectValue placeholder="Select a country" />
-                  </SelectTrigger >
+                  </SelectTrigger>
                   <SelectContent className="w-full max-h-64 overflow-y-auto">
                     {countryEntries.map(({ code, name }) => (
                       <SelectItem key={code} value={name}>
