@@ -1,6 +1,9 @@
-import ResumeForm from "@/components/app/resume/resumeForm";
+"use client";
 
-export default function ResumePage() {
+import ResumeForm from "@/components/app/resume/resumeForm";
+import { withAuth } from "@/components/auth/withAuth";
+
+function ResumePage() {
   return (
     <main className="min-h-screen flex items-center justify-center">
       <div className="w-full max-w-2xl rounded-xl shadow-lg p-8">
@@ -12,3 +15,5 @@ export default function ResumePage() {
     </main>
   );
 }
+
+export default withAuth(ResumePage);

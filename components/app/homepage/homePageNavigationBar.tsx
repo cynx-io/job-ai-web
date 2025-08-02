@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { useEffect, useState } from "react";
+import { AuthButton } from "@/components/auth/AuthButton";
 
 const navStyle = "text-muted-foreground hover:text-foreground transition";
 
@@ -43,10 +44,7 @@ export default function HomePageNavigationBar() {
         </Link>
       </nav>
       <section className="flex items-center gap-5 max-sm:hidden">
-        <Button className="bg-transparent border-1 border-white cursor-pointer hover:bg-foreground hover:text-background">
-          Login
-        </Button>
-        <Button>Get Started</Button>
+        <AuthButton />
       </section>
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger className="sm:hidden">
@@ -69,10 +67,9 @@ export default function HomePageNavigationBar() {
                 Reviews
               </Link>
             </SheetDescription>
-            <Button className="bg-transparent border-1 border-white cursor-pointer hover:bg-foreground hover:text-background mt-6">
-              Login
-            </Button>
-            <Button className="cursor-pointer">Get Started</Button>
+            <div className="mt-6">
+              <AuthButton />
+            </div>
           </SheetHeader>
         </SheetContent>
       </Sheet>
