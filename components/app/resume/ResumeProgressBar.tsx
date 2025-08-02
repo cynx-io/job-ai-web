@@ -5,13 +5,18 @@ type ProgressBarProps = {
   totalSteps: number;
 };
 
-export default function ResumeProgressBar({ currentStep, totalSteps }: ProgressBarProps) {
+export default function ResumeProgressBar({
+  currentStep,
+  totalSteps,
+}: ProgressBarProps) {
   const percentage = Math.round((currentStep / totalSteps) * 100);
 
   return (
     <div className="mb-6">
       <div className="flex justify-between mb-1 text-sm text-muted-foreground">
-        <span>Step {currentStep} of {totalSteps}</span>
+        <span>
+          Step {currentStep} of {totalSteps}
+        </span>
         <span>{percentage}%</span>
       </div>
       <div className="w-full bg-gray-200 h-2 rounded-full">
