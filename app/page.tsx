@@ -1,6 +1,5 @@
 "use client";
 
-import HomePageNavigationBar from "@/components/app/homepage/homePageNavigationBar";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
@@ -22,8 +21,24 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
+import { homePageFormSchema } from "@/lib/formSchema";
+import HomePageNavigationBar from "@/components/app/homepage/homePageNavigationBar";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function HomePage() {
   return (
@@ -93,13 +108,50 @@ function HomePageHero() {
           <h4>Over 10000+ users</h4>
         </div>
       </div>
-      <div className="flex flex-col max-sm:w-full sm:flex-row gap-5">
-        <Button className="w-full px-12 cursor-pointer">Get Started</Button>
-        <Button className="w-full px-12 cursor-pointer">
-          Quick Import Your Resume
-        </Button>
+      <CopyableText text="https://www.linkedin.com/in/christopher-hu-921ab421b/"/>
+      <div className="w-full sm:w-[80%] md:w-[60%]">
+        <HomePageForm />
       </div>
     </section>
+  );
+}
+
+function HomePageForm() {
+  const router = useRouter()
+  const form = useForm<z.infer<typeof homePageFormSchema>>({
+    resolver: zodResolver(homePageFormSchema),
+    defaultValues: {
+      linkedInUrl: "",
+    },
+  });
+
+  // 2. Define a submit handler.
+  function onSubmit(values: z.infer<typeof homePageFormSchema>) {
+    console.log(values);
+    router.push('/resume')
+  }
+  return (
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+        <FormField
+          control={form.control}
+          name="linkedInUrl"
+          render={({ field }) => (
+            <FormItem className="w-full">
+              <FormControl className="w-full">
+                <Input
+                  className="w-full"
+                  placeholder="https://www.linkedin.com/in/christopher-hu-921ab421b/"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Button type="submit" className="w-full">Create Your ATS Friendly Resume</Button>
+      </form>
+    </Form>
   );
 }
 
@@ -458,5 +510,31 @@ function HomePageFooter() {
         </p>
       </div>
     </footer>
+  );
+}
+
+function CopyableText({ text }: { text: string }) {
+  const [copied, setCopied] = useState(false);
+
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500); // reset after 1.5s
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  };
+
+  return (
+    <div className="flex items-center gap-2">
+      <span className="text-sm px-2 py-1 rounded">{text}</span>
+      <button
+        onClick={copyToClipboard}
+        className="text-blue-600 hover:underline text-sm"
+      >
+        {copied ? 'Copied!' : 'Copy'}
+      </button>
+    </div>
   );
 }

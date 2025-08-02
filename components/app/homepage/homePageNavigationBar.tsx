@@ -29,7 +29,7 @@ export default function HomePageNavigationBar() {
   }, []);
 
   return (
-    <header className="w-full top-0 flex justify-between items-center bg-background/90 py-3 px-6 fixed backdrop-blur-md ">
+    <header className="w-full top-0 flex justify-between items-center bg-background/90 py-3 px-6 fixed backdrop-blur-md z-100 ">
       <h1>Logoooooooo</h1>
       <nav className="flex gap-8 items-center max-sm:hidden">
         <Link href={"#"} className={`${navStyle}`}>
@@ -50,13 +50,15 @@ export default function HomePageNavigationBar() {
       </section>
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger className="sm:hidden">
-          <Menu size={32} className={`cursor-pointer ${open ? 'hidden' : ''}`} />
+          <Menu
+            size={32}
+            className={`cursor-pointer ${open ? "hidden" : ""}`}
+          />
         </SheetTrigger>
         <SheetContent>
           <SheetHeader>
             <SheetTitle className="text-xl">Logoaaaaa</SheetTitle>
             <SheetDescription className="flex flex-col gap-2 mt-4 text-left text-lg">
-             
               <Link href={"#"} className={navStyle}>
                 How It Works
               </Link>
