@@ -2,7 +2,8 @@
 "use client";
 
 import React from "react";
-import { Page, Text, View, Document, StyleSheet, PDFViewer } from "@react-pdf/renderer";
+import dynamic from "next/dynamic";
+import { Page, Text, View, Document, StyleSheet } from "@react-pdf/renderer";
 
 // Create styles
 const styles = StyleSheet.create({
@@ -29,6 +30,13 @@ const MyDocument = () => (
       </View>
     </Page>
   </Document>
+);
+
+// Dynamically import PDFViewer to avoid SSR issues
+const PDFViewer = dynamic(
+  () =>
+    import("@react-pdf/renderer").then((mod) => ({ default: mod.PDFViewer })),
+  { ssr: false },
 );
 
 export default function PdfPreview() {
