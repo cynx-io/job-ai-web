@@ -2,7 +2,7 @@
 
 import React from "react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import { UserPageNavigationBar } from "@/components/app/userpage/userPageNavigationBar";
+import { AppSidebar } from "@/components/app/userpage/userPageNavigationBar";
 
 export default function UserLayout({
   children,
@@ -11,7 +11,7 @@ export default function UserLayout({
 }) {
   return (
     <SidebarProvider>
-      <UserPageNavigationBar />
+      <AppSidebar />
       <main className="w-full">
         <SidebarTrigger />
         {children}
