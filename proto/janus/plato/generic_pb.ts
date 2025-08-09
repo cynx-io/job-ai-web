@@ -4,7 +4,6 @@
 
 import type { GenFile, GenMessage } from "@bufbuild/protobuf/codegenv2";
 import { fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv2";
-
 import type { BaseRequest } from "../core_pb";
 import { file_core } from "../core_pb";
 import type { Message } from "@bufbuild/protobuf";
@@ -12,12 +11,8 @@ import type { Message } from "@bufbuild/protobuf";
 /**
  * Describes the file plato/generic.proto.
  */
-export const file_plato_generic: GenFile =
-  /*@__PURE__*/
-  fileDesc(
-    "ChNwbGF0by9nZW5lcmljLnByb3RvEgVwbGF0byKaAQoPUGFnaW5hdGVSZXF1ZXN0EicKBGJhc2UYASABKAsyES5jb3JlLkJhc2VSZXF1ZXN0Qga6SAPIAQESEgoFbGltaXQYAiABKAVIAIgBARITCgZvZmZzZXQYAyABKAVIAYgBARIUCgdrZXl3b3JkGAQgASgJSAKIAQFCCAoGX2xpbWl0QgkKB19vZmZzZXRCCgoIX2tleXdvcmQiRAoLU2x1Z1JlcXVlc3QSJwoEYmFzZRgBIAEoCzIRLmNvcmUuQmFzZVJlcXVlc3RCBrpIA8gBARIMCgRzbHVnGAIgASgJIl4KEFRvcGljTW9kZVJlcXVlc3QSJwoEYmFzZRgBIAEoCzIRLmNvcmUuQmFzZVJlcXVlc3RCBrpIA8gBARIQCgh0b3BpY19pZBgCIAEoBRIPCgdtb2RlX2lkGAMgASgFIkkKDU1vZGVJZFJlcXVlc3QSJwoEYmFzZRgBIAEoCzIRLmNvcmUuQmFzZVJlcXVlc3RCBrpIA8gBARIPCgdtb2RlX2lkGAIgASgFIksKDlRvcGljSWRSZXF1ZXN0EicKBGJhc2UYASABKAsyES5jb3JlLkJhc2VSZXF1ZXN0Qga6SAPIAQESEAoIdG9waWNfaWQYAiABKAUiVAoSRGFpbHlHYW1lSWRSZXF1ZXN0EicKBGJhc2UYASABKAsyES5jb3JlLkJhc2VSZXF1ZXN0Qga6SAPIAQESFQoNZGFpbHlfZ2FtZV9pZBgCIAEoBSJNCg9BbnN3ZXJJZFJlcXVlc3QSJwoEYmFzZRgBIAEoCzIRLmNvcmUuQmFzZVJlcXVlc3RCBrpIA8gBARIRCglhbnN3ZXJfaWQYAiABKAUiXgoXQW5zd2VyQ2F0ZWdvcnlJZFJlcXVlc3QSJwoEYmFzZRgBIAEoCzIRLmNvcmUuQmFzZVJlcXVlc3RCBrpIA8gBARIaChJhbnN3ZXJfY2F0ZWdvcnlfaWQYAiABKAVCEVoPcGxhdG8vYXBpL3Byb3RvYgZwcm90bzM",
-    [file_core],
-  );
+export const file_plato_generic: GenFile = /*@__PURE__*/
+  fileDesc("ChNwbGF0by9nZW5lcmljLnByb3RvEgVwbGF0byKaAQoPUGFnaW5hdGVSZXF1ZXN0EicKBGJhc2UYASABKAsyES5jb3JlLkJhc2VSZXF1ZXN0Qga6SAPIAQESEgoFbGltaXQYAiABKAVIAIgBARITCgZvZmZzZXQYAyABKAVIAYgBARIUCgdrZXl3b3JkGAQgASgJSAKIAQFCCAoGX2xpbWl0QgkKB19vZmZzZXRCCgoIX2tleXdvcmQiRAoLU2x1Z1JlcXVlc3QSJwoEYmFzZRgBIAEoCzIRLmNvcmUuQmFzZVJlcXVlc3RCBrpIA8gBARIMCgRzbHVnGAIgASgJIl4KEFRvcGljTW9kZVJlcXVlc3QSJwoEYmFzZRgBIAEoCzIRLmNvcmUuQmFzZVJlcXVlc3RCBrpIA8gBARIQCgh0b3BpY19pZBgCIAEoBRIPCgdtb2RlX2lkGAMgASgFIkkKDU1vZGVJZFJlcXVlc3QSJwoEYmFzZRgBIAEoCzIRLmNvcmUuQmFzZVJlcXVlc3RCBrpIA8gBARIPCgdtb2RlX2lkGAIgASgFIksKDlRvcGljSWRSZXF1ZXN0EicKBGJhc2UYASABKAsyES5jb3JlLkJhc2VSZXF1ZXN0Qga6SAPIAQESEAoIdG9waWNfaWQYAiABKAUiVAoSRGFpbHlHYW1lSWRSZXF1ZXN0EicKBGJhc2UYASABKAsyES5jb3JlLkJhc2VSZXF1ZXN0Qga6SAPIAQESFQoNZGFpbHlfZ2FtZV9pZBgCIAEoBSJNCg9BbnN3ZXJJZFJlcXVlc3QSJwoEYmFzZRgBIAEoCzIRLmNvcmUuQmFzZVJlcXVlc3RCBrpIA8gBARIRCglhbnN3ZXJfaWQYAiABKAUiXgoXQW5zd2VyQ2F0ZWdvcnlJZFJlcXVlc3QSJwoEYmFzZRgBIAEoCzIRLmNvcmUuQmFzZVJlcXVlc3RCBrpIA8gBARIaChJhbnN3ZXJfY2F0ZWdvcnlfaWQYAiABKAVCEVoPcGxhdG8vYXBpL3Byb3RvYgZwcm90bzM", [file_core]);
 
 /**
  * @generated from message plato.PaginateRequest
@@ -48,8 +43,7 @@ export type PaginateRequest = Message<"plato.PaginateRequest"> & {
  * Describes the message plato.PaginateRequest.
  * Use `create(PaginateRequestSchema)` to create a new message.
  */
-export const PaginateRequestSchema: GenMessage<PaginateRequest> =
-  /*@__PURE__*/
+export const PaginateRequestSchema: GenMessage<PaginateRequest> = /*@__PURE__*/
   messageDesc(file_plato_generic, 0);
 
 /**
@@ -71,8 +65,7 @@ export type SlugRequest = Message<"plato.SlugRequest"> & {
  * Describes the message plato.SlugRequest.
  * Use `create(SlugRequestSchema)` to create a new message.
  */
-export const SlugRequestSchema: GenMessage<SlugRequest> =
-  /*@__PURE__*/
+export const SlugRequestSchema: GenMessage<SlugRequest> = /*@__PURE__*/
   messageDesc(file_plato_generic, 1);
 
 /**
@@ -99,8 +92,7 @@ export type TopicModeRequest = Message<"plato.TopicModeRequest"> & {
  * Describes the message plato.TopicModeRequest.
  * Use `create(TopicModeRequestSchema)` to create a new message.
  */
-export const TopicModeRequestSchema: GenMessage<TopicModeRequest> =
-  /*@__PURE__*/
+export const TopicModeRequestSchema: GenMessage<TopicModeRequest> = /*@__PURE__*/
   messageDesc(file_plato_generic, 2);
 
 /**
@@ -122,8 +114,7 @@ export type ModeIdRequest = Message<"plato.ModeIdRequest"> & {
  * Describes the message plato.ModeIdRequest.
  * Use `create(ModeIdRequestSchema)` to create a new message.
  */
-export const ModeIdRequestSchema: GenMessage<ModeIdRequest> =
-  /*@__PURE__*/
+export const ModeIdRequestSchema: GenMessage<ModeIdRequest> = /*@__PURE__*/
   messageDesc(file_plato_generic, 3);
 
 /**
@@ -145,8 +136,7 @@ export type TopicIdRequest = Message<"plato.TopicIdRequest"> & {
  * Describes the message plato.TopicIdRequest.
  * Use `create(TopicIdRequestSchema)` to create a new message.
  */
-export const TopicIdRequestSchema: GenMessage<TopicIdRequest> =
-  /*@__PURE__*/
+export const TopicIdRequestSchema: GenMessage<TopicIdRequest> = /*@__PURE__*/
   messageDesc(file_plato_generic, 4);
 
 /**
@@ -168,8 +158,7 @@ export type DailyGameIdRequest = Message<"plato.DailyGameIdRequest"> & {
  * Describes the message plato.DailyGameIdRequest.
  * Use `create(DailyGameIdRequestSchema)` to create a new message.
  */
-export const DailyGameIdRequestSchema: GenMessage<DailyGameIdRequest> =
-  /*@__PURE__*/
+export const DailyGameIdRequestSchema: GenMessage<DailyGameIdRequest> = /*@__PURE__*/
   messageDesc(file_plato_generic, 5);
 
 /**
@@ -191,30 +180,28 @@ export type AnswerIdRequest = Message<"plato.AnswerIdRequest"> & {
  * Describes the message plato.AnswerIdRequest.
  * Use `create(AnswerIdRequestSchema)` to create a new message.
  */
-export const AnswerIdRequestSchema: GenMessage<AnswerIdRequest> =
-  /*@__PURE__*/
+export const AnswerIdRequestSchema: GenMessage<AnswerIdRequest> = /*@__PURE__*/
   messageDesc(file_plato_generic, 6);
 
 /**
  * @generated from message plato.AnswerCategoryIdRequest
  */
-export type AnswerCategoryIdRequest =
-  Message<"plato.AnswerCategoryIdRequest"> & {
-    /**
-     * @generated from field: core.BaseRequest base = 1;
-     */
-    base?: BaseRequest;
+export type AnswerCategoryIdRequest = Message<"plato.AnswerCategoryIdRequest"> & {
+  /**
+   * @generated from field: core.BaseRequest base = 1;
+   */
+  base?: BaseRequest;
 
-    /**
-     * @generated from field: int32 answer_category_id = 2;
-     */
-    answerCategoryId: number;
-  };
+  /**
+   * @generated from field: int32 answer_category_id = 2;
+   */
+  answerCategoryId: number;
+};
 
 /**
  * Describes the message plato.AnswerCategoryIdRequest.
  * Use `create(AnswerCategoryIdRequestSchema)` to create a new message.
  */
-export const AnswerCategoryIdRequestSchema: GenMessage<AnswerCategoryIdRequest> =
-  /*@__PURE__*/
+export const AnswerCategoryIdRequestSchema: GenMessage<AnswerCategoryIdRequest> = /*@__PURE__*/
   messageDesc(file_plato_generic, 7);
+

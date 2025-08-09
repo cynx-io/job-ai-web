@@ -2,43 +2,21 @@
 // @generated from file plato/topic.proto (package plato, syntax proto3)
 /* eslint-disable */
 
-import type {
-  GenFile,
-  GenMessage,
-  GenService,
-} from "@bufbuild/protobuf/codegenv2";
-import {
-  fileDesc,
-  messageDesc,
-  serviceDesc,
-} from "@bufbuild/protobuf/codegenv2";
-import type {
-  BaseRequest,
-  BaseResponse,
-  GenericRequestSchema,
-  GenericResponseSchema,
-} from "../core_pb";
+import type { GenFile, GenMessage, GenService } from "@bufbuild/protobuf/codegenv2";
+import { fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv2";
+import type { BaseRequest, BaseResponse, GenericRequestSchema, GenericResponseSchema } from "../core_pb";
 import { file_core } from "../core_pb";
-import type {
-  PaginateRequestSchema,
-  SlugRequestSchema,
-  TopicIdRequestSchema,
-} from "./generic_pb";
+import type { PaginateRequestSchema, SlugRequestSchema, TopicIdRequestSchema } from "./generic_pb";
 import { file_plato_generic } from "./generic_pb";
 import type { Topic } from "./object_pb";
 import { file_plato_object } from "./object_pb";
-
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file plato/topic.proto.
  */
-export const file_plato_topic: GenFile =
-  /*@__PURE__*/
-  fileDesc(
-    "ChFwbGF0by90b3BpYy5wcm90bxIFcGxhdG8iVwoVUGFnaW5hdGVUb3BpY1Jlc3BvbnNlEiAKBGJhc2UYASABKAsyEi5jb3JlLkJhc2VSZXNwb25zZRIcCgZ0b3BpY3MYAiADKAsyDC5wbGF0by5Ub3BpYyJOCg1Ub3BpY1Jlc3BvbnNlEiAKBGJhc2UYASABKAsyEi5jb3JlLkJhc2VSZXNwb25zZRIbCgV0b3BpYxgCIAEoCzIMLnBsYXRvLlRvcGljItsBChJJbnNlcnRUb3BpY1JlcXVlc3QSJwoEYmFzZRgBIAEoCzIRLmNvcmUuQmFzZVJlcXVlc3RCBrpIA8gBARINCgV0aXRsZRgCIAEoCRITCgtkZXNjcmlwdGlvbhgDIAEoCRIMCgRzbHVnGAYgASgJEhAKCGljb25fdXJsGBQgASgJEhcKCmJhbm5lcl91cmwYFSABKAlIAIgBARIcCg90aXRsZV9pbWFnZV91cmwYFiABKAlIAYgBAUINCgtfYmFubmVyX3VybEISChBfdGl0bGVfaW1hZ2VfdXJsIo8CChJVcGRhdGVUb3BpY1JlcXVlc3QSJwoEYmFzZRgBIAEoCzIRLmNvcmUuQmFzZVJlcXVlc3RCBrpIA8gBARIKCgJpZBgCIAEoBRISCgV0aXRsZRgDIAEoCUgAiAEBEhgKC2Rlc2NyaXB0aW9uGAQgASgJSAGIAQESFQoIaWNvbl91cmwYBSABKAlIAogBARIXCgpiYW5uZXJfdXJsGAYgASgJSAOIAQESHAoPdGl0bGVfaW1hZ2VfdXJsGAcgASgJSASIAQFCCAoGX3RpdGxlQg4KDF9kZXNjcmlwdGlvbkILCglfaWNvbl91cmxCDQoLX2Jhbm5lcl91cmxCEgoQX3RpdGxlX2ltYWdlX3VybDLoAwoRUGxhdG9Ub3BpY1NlcnZpY2USQAoLSW5zZXJ0VG9waWMSGS5wbGF0by5JbnNlcnRUb3BpY1JlcXVlc3QaFC5wbGF0by5Ub3BpY1Jlc3BvbnNlIgASQAoLVXBkYXRlVG9waWMSGS5wbGF0by5VcGRhdGVUb3BpY1JlcXVlc3QaFC5wbGF0by5Ub3BpY1Jlc3BvbnNlIgASPQoLRGVsZXRlVG9waWMSFS5wbGF0by5Ub3BpY0lkUmVxdWVzdBoVLmNvcmUuR2VuZXJpY1Jlc3BvbnNlIgASSgoSTGlzdFRvcGljc0J5VXNlcklkEhQuY29yZS5HZW5lcmljUmVxdWVzdBocLnBsYXRvLlBhZ2luYXRlVG9waWNSZXNwb25zZSIAEkcKDVBhZ2luYXRlVG9waWMSFi5wbGF0by5QYWdpbmF0ZVJlcXVlc3QaHC5wbGF0by5QYWdpbmF0ZVRvcGljUmVzcG9uc2UiABI9CgxHZXRUb3BpY0J5SWQSFS5wbGF0by5Ub3BpY0lkUmVxdWVzdBoULnBsYXRvLlRvcGljUmVzcG9uc2UiABI8Cg5HZXRUb3BpY0J5U2x1ZxISLnBsYXRvLlNsdWdSZXF1ZXN0GhQucGxhdG8uVG9waWNSZXNwb25zZSIAQhFaD3BsYXRvL2FwaS9wcm90b2IGcHJvdG8z",
-    [file_core, file_plato_generic, file_plato_object],
-  );
+export const file_plato_topic: GenFile = /*@__PURE__*/
+  fileDesc("ChFwbGF0by90b3BpYy5wcm90bxIFcGxhdG8iVwoVUGFnaW5hdGVUb3BpY1Jlc3BvbnNlEiAKBGJhc2UYASABKAsyEi5jb3JlLkJhc2VSZXNwb25zZRIcCgZ0b3BpY3MYAiADKAsyDC5wbGF0by5Ub3BpYyJOCg1Ub3BpY1Jlc3BvbnNlEiAKBGJhc2UYASABKAsyEi5jb3JlLkJhc2VSZXNwb25zZRIbCgV0b3BpYxgCIAEoCzIMLnBsYXRvLlRvcGljItsBChJJbnNlcnRUb3BpY1JlcXVlc3QSJwoEYmFzZRgBIAEoCzIRLmNvcmUuQmFzZVJlcXVlc3RCBrpIA8gBARINCgV0aXRsZRgCIAEoCRITCgtkZXNjcmlwdGlvbhgDIAEoCRIMCgRzbHVnGAYgASgJEhAKCGljb25fdXJsGBQgASgJEhcKCmJhbm5lcl91cmwYFSABKAlIAIgBARIcCg90aXRsZV9pbWFnZV91cmwYFiABKAlIAYgBAUINCgtfYmFubmVyX3VybEISChBfdGl0bGVfaW1hZ2VfdXJsIo8CChJVcGRhdGVUb3BpY1JlcXVlc3QSJwoEYmFzZRgBIAEoCzIRLmNvcmUuQmFzZVJlcXVlc3RCBrpIA8gBARIKCgJpZBgCIAEoBRISCgV0aXRsZRgDIAEoCUgAiAEBEhgKC2Rlc2NyaXB0aW9uGAQgASgJSAGIAQESFQoIaWNvbl91cmwYBSABKAlIAogBARIXCgpiYW5uZXJfdXJsGAYgASgJSAOIAQESHAoPdGl0bGVfaW1hZ2VfdXJsGAcgASgJSASIAQFCCAoGX3RpdGxlQg4KDF9kZXNjcmlwdGlvbkILCglfaWNvbl91cmxCDQoLX2Jhbm5lcl91cmxCEgoQX3RpdGxlX2ltYWdlX3VybDLoAwoRUGxhdG9Ub3BpY1NlcnZpY2USQAoLSW5zZXJ0VG9waWMSGS5wbGF0by5JbnNlcnRUb3BpY1JlcXVlc3QaFC5wbGF0by5Ub3BpY1Jlc3BvbnNlIgASQAoLVXBkYXRlVG9waWMSGS5wbGF0by5VcGRhdGVUb3BpY1JlcXVlc3QaFC5wbGF0by5Ub3BpY1Jlc3BvbnNlIgASPQoLRGVsZXRlVG9waWMSFS5wbGF0by5Ub3BpY0lkUmVxdWVzdBoVLmNvcmUuR2VuZXJpY1Jlc3BvbnNlIgASSgoSTGlzdFRvcGljc0J5VXNlcklkEhQuY29yZS5HZW5lcmljUmVxdWVzdBocLnBsYXRvLlBhZ2luYXRlVG9waWNSZXNwb25zZSIAEkcKDVBhZ2luYXRlVG9waWMSFi5wbGF0by5QYWdpbmF0ZVJlcXVlc3QaHC5wbGF0by5QYWdpbmF0ZVRvcGljUmVzcG9uc2UiABI9CgxHZXRUb3BpY0J5SWQSFS5wbGF0by5Ub3BpY0lkUmVxdWVzdBoULnBsYXRvLlRvcGljUmVzcG9uc2UiABI8Cg5HZXRUb3BpY0J5U2x1ZxISLnBsYXRvLlNsdWdSZXF1ZXN0GhQucGxhdG8uVG9waWNSZXNwb25zZSIAQhFaD3BsYXRvL2FwaS9wcm90b2IGcHJvdG8z", [file_core, file_plato_generic, file_plato_object]);
 
 /**
  * @generated from message plato.PaginateTopicResponse
@@ -59,8 +37,7 @@ export type PaginateTopicResponse = Message<"plato.PaginateTopicResponse"> & {
  * Describes the message plato.PaginateTopicResponse.
  * Use `create(PaginateTopicResponseSchema)` to create a new message.
  */
-export const PaginateTopicResponseSchema: GenMessage<PaginateTopicResponse> =
-  /*@__PURE__*/
+export const PaginateTopicResponseSchema: GenMessage<PaginateTopicResponse> = /*@__PURE__*/
   messageDesc(file_plato_topic, 0);
 
 /**
@@ -82,8 +59,7 @@ export type TopicResponse = Message<"plato.TopicResponse"> & {
  * Describes the message plato.TopicResponse.
  * Use `create(TopicResponseSchema)` to create a new message.
  */
-export const TopicResponseSchema: GenMessage<TopicResponse> =
-  /*@__PURE__*/
+export const TopicResponseSchema: GenMessage<TopicResponse> = /*@__PURE__*/
   messageDesc(file_plato_topic, 1);
 
 /**
@@ -130,8 +106,7 @@ export type InsertTopicRequest = Message<"plato.InsertTopicRequest"> & {
  * Describes the message plato.InsertTopicRequest.
  * Use `create(InsertTopicRequestSchema)` to create a new message.
  */
-export const InsertTopicRequestSchema: GenMessage<InsertTopicRequest> =
-  /*@__PURE__*/
+export const InsertTopicRequestSchema: GenMessage<InsertTopicRequest> = /*@__PURE__*/
   messageDesc(file_plato_topic, 2);
 
 /**
@@ -178,8 +153,7 @@ export type UpdateTopicRequest = Message<"plato.UpdateTopicRequest"> & {
  * Describes the message plato.UpdateTopicRequest.
  * Use `create(UpdateTopicRequestSchema)` to create a new message.
  */
-export const UpdateTopicRequestSchema: GenMessage<UpdateTopicRequest> =
-  /*@__PURE__*/
+export const UpdateTopicRequestSchema: GenMessage<UpdateTopicRequest> = /*@__PURE__*/
   messageDesc(file_plato_topic, 3);
 
 /**
@@ -193,7 +167,7 @@ export const PlatoTopicService: GenService<{
     methodKind: "unary";
     input: typeof InsertTopicRequestSchema;
     output: typeof TopicResponseSchema;
-  };
+  },
   /**
    * @generated from rpc plato.PlatoTopicService.UpdateTopic
    */
@@ -201,7 +175,7 @@ export const PlatoTopicService: GenService<{
     methodKind: "unary";
     input: typeof UpdateTopicRequestSchema;
     output: typeof TopicResponseSchema;
-  };
+  },
   /**
    * @generated from rpc plato.PlatoTopicService.DeleteTopic
    */
@@ -209,7 +183,7 @@ export const PlatoTopicService: GenService<{
     methodKind: "unary";
     input: typeof TopicIdRequestSchema;
     output: typeof GenericResponseSchema;
-  };
+  },
   /**
    * @generated from rpc plato.PlatoTopicService.ListTopicsByUserId
    */
@@ -217,7 +191,7 @@ export const PlatoTopicService: GenService<{
     methodKind: "unary";
     input: typeof GenericRequestSchema;
     output: typeof PaginateTopicResponseSchema;
-  };
+  },
   /**
    * @generated from rpc plato.PlatoTopicService.PaginateTopic
    */
@@ -225,7 +199,7 @@ export const PlatoTopicService: GenService<{
     methodKind: "unary";
     input: typeof PaginateRequestSchema;
     output: typeof PaginateTopicResponseSchema;
-  };
+  },
   /**
    * @generated from rpc plato.PlatoTopicService.GetTopicById
    */
@@ -233,7 +207,7 @@ export const PlatoTopicService: GenService<{
     methodKind: "unary";
     input: typeof TopicIdRequestSchema;
     output: typeof TopicResponseSchema;
-  };
+  },
   /**
    * @generated from rpc plato.PlatoTopicService.GetTopicBySlug
    */
@@ -241,5 +215,7 @@ export const PlatoTopicService: GenService<{
     methodKind: "unary";
     input: typeof SlugRequestSchema;
     output: typeof TopicResponseSchema;
-  };
-}> = /*@__PURE__*/ serviceDesc(file_plato_topic, 0);
+  },
+}> = /*@__PURE__*/
+  serviceDesc(file_plato_topic, 0);
+

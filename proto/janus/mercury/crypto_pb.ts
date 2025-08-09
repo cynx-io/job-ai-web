@@ -2,26 +2,15 @@
 // @generated from file mercury/crypto.proto (package mercury, syntax proto3)
 /* eslint-disable */
 
-import type {
-  GenFile,
-  GenMessage,
-  GenService,
-} from "@bufbuild/protobuf/codegenv2";
-import {
-  fileDesc,
-  messageDesc,
-  serviceDesc,
-} from "@bufbuild/protobuf/codegenv2";
+import type { GenFile, GenMessage, GenService } from "@bufbuild/protobuf/codegenv2";
+import { fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv2";
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file mercury/crypto.proto.
  */
-export const file_mercury_crypto: GenFile =
-  /*@__PURE__*/
-  fileDesc(
-    "ChRtZXJjdXJ5L2NyeXB0by5wcm90bxIHbWVyY3VyeSIqCgxCYXNlUmVzcG9uc2USDAoEY29kZRgBIAEoCRIMCgRkZXNjGAIgASgJIiIKEVNlYXJjaENvaW5SZXF1ZXN0Eg0KBXF1ZXJ5GAEgASgJImEKElNlYXJjaENvaW5SZXNwb25zZRIjCgRiYXNlGAEgASgLMhUubWVyY3VyeS5CYXNlUmVzcG9uc2USJgoFY29pbnMYAiADKAsyFy5tZXJjdXJ5LkNvaW5TZWFyY2hEYXRhIlgKDkNvaW5TZWFyY2hEYXRhEgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkSDgoGc3ltYm9sGAMgASgJEg0KBXRodW1iGAQgASgJEg0KBWxhcmdlGAUgASgJIiUKEkdldENvaW5SaXNrUmVxdWVzdBIPCgdjb2luX2lkGAEgASgJIrACChNHZXRDb2luUmlza1Jlc3BvbnNlEiMKBGJhc2UYASABKAsyFS5tZXJjdXJ5LkJhc2VSZXNwb25zZRImCgp0b2tlbl9pbmZvGAIgASgLMhIubWVyY3VyeS5Ub2tlbkluZm8SJgoKcmlza19mbGFncxgDIAEoCzISLm1lcmN1cnkuUmlza0ZsYWdzEigKC2hvbGRlcl9pbmZvGAQgASgLMhMubWVyY3VyeS5Ib2xkZXJJbmZvEigKC3NvY2lhbF9pbmZvGAUgASgLMhMubWVyY3VyeS5Tb2NpYWxJbmZvEigKC21hcmtldF9pbmZvGAYgASgLMhMubWVyY3VyeS5NYXJrZXRJbmZvEiYKCnJpc2tfc2NvcmUYByABKAsyEi5tZXJjdXJ5LlJpc2tTY29yZSIvCglSaXNrU2NvcmUSDQoFc2NvcmUYASABKAUSEwoLZGVzY3JpcHRpb24YAiABKAkijAEKCVRva2VuSW5mbxIMCgRuYW1lGAEgASgJEg4KBnN5bWJvbBgCIAEoCRIYChBjb250cmFjdF9hZGRyZXNzGAMgASgJEhAKCGxvZ29fdXJsGAQgASgJEg0KBWNoYWluGAUgASgJEhQKDHRvdGFsX3N1cHBseRgGIAEoARIQCghkZWNpbWFscxgHIAEoBSLOAwoJUmlza0ZsYWdzEi0KCWZ1bmN0aW9ucxgBIAEoCzIaLm1lcmN1cnkuUmlza0ZsYWdGdW5jdGlvbnMSLgoTb3duZXJzaGlwX3Jlbm91bmNlZBgCIAEoCzIRLm1lcmN1cnkuUmlza0ZsYWcSLAoRdmVyaWZpZWRfY29udHJhY3QYAyABKAsyES5tZXJjdXJ5LlJpc2tGbGFnEiYKC2lzX2hvbmV5cG90GAQgASgLMhEubWVyY3VyeS5SaXNrRmxhZxIrChBsaXF1aWRpdHlfbG9ja2VkGAUgASgLMhEubWVyY3VyeS5SaXNrRmxhZxIsChFyZWNlbnRfZGVwbG95bWVudBgGIAEoCzIRLm1lcmN1cnkuUmlza0ZsYWcSIwoIaXNfcHJveHkYByABKAsyES5tZXJjdXJ5LlJpc2tGbGFnEikKDmlzX29wZW5fc291cmNlGAggASgLMhEubWVyY3VyeS5SaXNrRmxhZxIoCg1pc19hbnRpX3doYWxlGAkgASgLMhEubWVyY3VyeS5SaXNrRmxhZxIoCg1pc19nYXNfYWJ1c2VyGAogASgLMhEubWVyY3VyeS5SaXNrRmxhZxINCgVub3RlcxgyIAEoCSKfAwoRUmlza0ZsYWdGdW5jdGlvbnMSHwoEbWludBgBIAEoCzIRLm1lcmN1cnkuUmlza0ZsYWcSIAoFb3duZXIYAiABKAsyES5tZXJjdXJ5LlJpc2tGbGFnEiAKBXBhdXNlGAMgASgLMhEubWVyY3VyeS5SaXNrRmxhZxIiCgd1bnBhdXNlGAQgASgLMhEubWVyY3VyeS5SaXNrRmxhZxIqCg9zZXRfZmVlX3BlcmNlbnQYBSABKAsyES5tZXJjdXJ5LlJpc2tGbGFnEi0KEnRyYW5zZmVyX293bmVyc2hpcBgGIAEoCzIRLm1lcmN1cnkuUmlza0ZsYWcSLQoScmVub3VuY2Vfb3duZXJzaGlwGAcgASgLMhEubWVyY3VyeS5SaXNrRmxhZxIrChBkaXNhYmxlX3RyYW5zZmVyGAggASgLMhEubWVyY3VyeS5SaXNrRmxhZxIkCglibGFja2xpc3QYCSABKAsyES5tZXJjdXJ5LlJpc2tGbGFnEiQKCXdoaXRlbGlzdBgKIAEoCzIRLm1lcmN1cnkuUmlza0ZsYWciOwoIUmlza0ZsYWcSDQoFdmFsdWUYASABKAgSEAoIc2V2ZXJpdHkYAiABKAUSDgoGcmVhc29uGAMgASgJIu8BCgpIb2xkZXJJbmZvEiEKGXRvcF90ZW5faG9sZGVyX3BlcmNlbnRhZ2UYASABKAESIAoHaG9sZGVycxgCIAMoCzIPLm1lcmN1cnkuSG9sZGVyEiQKHHRvcF90ZW5fbHBfaG9sZGVyX3BlcmNlbnRhZ2UYAyABKAESIwoKbHBfaG9sZGVycxgEIAMoCzIPLm1lcmN1cnkuSG9sZGVyEhwKFGxwX2xvY2tlZF9wZXJjZW50YWdlGAUgASgBEhkKEWxwX2xvY2tlZF9iYWxhbmNlGAYgASgBEhgKEGxwX3RvdGFsX2JhbGFuY2UYByABKAEiUQoGSG9sZGVyEg8KB2FkZHJlc3MYASABKAkSEgoKcGVyY2VudGFnZRgCIAEoARIPCgdiYWxhbmNlGAMgASgBEhEKCWlzX2xvY2tlZBgEIAEoCCJjCgpTb2NpYWxJbmZvEg8KB3dlYnNpdGUYASABKAkSDgoGZ2l0aHViGAIgASgJEg8KB3R3aXR0ZXIYAyABKAkSDgoGcmVkZGl0GAQgASgJEhMKC2Rlc2NyaXB0aW9uGAUgASgJIsgBCgpNYXJrZXRJbmZvEhIKCm1hcmtldF9jYXAYASABKAESEgoKdm9sdW1lXzI0aBgCIAEoARINCgVwcmljZRgDIAEoARIYChBwcmljZV9jaGFuZ2VfMjRoGAQgASgBEiMKG3ByaWNlX2NoYW5nZV9wZXJjZW50YWdlXzI0aBgFIAEoARIaChJjaXJjdWxhdGluZ19zdXBwbHkYBiABKAESFAoMdG90YWxfc3VwcGx5GAcgASgBEhIKCm1heF9zdXBwbHkYCCABKAEyqwEKFE1lcmN1cnlDcnlwdG9TZXJ2aWNlEkcKClNlYXJjaENvaW4SGi5tZXJjdXJ5LlNlYXJjaENvaW5SZXF1ZXN0GhsubWVyY3VyeS5TZWFyY2hDb2luUmVzcG9uc2UiABJKCgtHZXRDb2luUmlzaxIbLm1lcmN1cnkuR2V0Q29pblJpc2tSZXF1ZXN0GhwubWVyY3VyeS5HZXRDb2luUmlza1Jlc3BvbnNlIgBCE1oRbWVyY3VyeS9hcGkvcHJvdG9iBnByb3RvMw",
-  );
+export const file_mercury_crypto: GenFile = /*@__PURE__*/
+  fileDesc("ChRtZXJjdXJ5L2NyeXB0by5wcm90bxIHbWVyY3VyeSIqCgxCYXNlUmVzcG9uc2USDAoEY29kZRgBIAEoCRIMCgRkZXNjGAIgASgJIiIKEVNlYXJjaENvaW5SZXF1ZXN0Eg0KBXF1ZXJ5GAEgASgJImEKElNlYXJjaENvaW5SZXNwb25zZRIjCgRiYXNlGAEgASgLMhUubWVyY3VyeS5CYXNlUmVzcG9uc2USJgoFY29pbnMYAiADKAsyFy5tZXJjdXJ5LkNvaW5TZWFyY2hEYXRhIlgKDkNvaW5TZWFyY2hEYXRhEgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkSDgoGc3ltYm9sGAMgASgJEg0KBXRodW1iGAQgASgJEg0KBWxhcmdlGAUgASgJIiUKEkdldENvaW5SaXNrUmVxdWVzdBIPCgdjb2luX2lkGAEgASgJIrACChNHZXRDb2luUmlza1Jlc3BvbnNlEiMKBGJhc2UYASABKAsyFS5tZXJjdXJ5LkJhc2VSZXNwb25zZRImCgp0b2tlbl9pbmZvGAIgASgLMhIubWVyY3VyeS5Ub2tlbkluZm8SJgoKcmlza19mbGFncxgDIAEoCzISLm1lcmN1cnkuUmlza0ZsYWdzEigKC2hvbGRlcl9pbmZvGAQgASgLMhMubWVyY3VyeS5Ib2xkZXJJbmZvEigKC3NvY2lhbF9pbmZvGAUgASgLMhMubWVyY3VyeS5Tb2NpYWxJbmZvEigKC21hcmtldF9pbmZvGAYgASgLMhMubWVyY3VyeS5NYXJrZXRJbmZvEiYKCnJpc2tfc2NvcmUYByABKAsyEi5tZXJjdXJ5LlJpc2tTY29yZSIvCglSaXNrU2NvcmUSDQoFc2NvcmUYASABKAUSEwoLZGVzY3JpcHRpb24YAiABKAkijAEKCVRva2VuSW5mbxIMCgRuYW1lGAEgASgJEg4KBnN5bWJvbBgCIAEoCRIYChBjb250cmFjdF9hZGRyZXNzGAMgASgJEhAKCGxvZ29fdXJsGAQgASgJEg0KBWNoYWluGAUgASgJEhQKDHRvdGFsX3N1cHBseRgGIAEoARIQCghkZWNpbWFscxgHIAEoBSLOAwoJUmlza0ZsYWdzEi0KCWZ1bmN0aW9ucxgBIAEoCzIaLm1lcmN1cnkuUmlza0ZsYWdGdW5jdGlvbnMSLgoTb3duZXJzaGlwX3Jlbm91bmNlZBgCIAEoCzIRLm1lcmN1cnkuUmlza0ZsYWcSLAoRdmVyaWZpZWRfY29udHJhY3QYAyABKAsyES5tZXJjdXJ5LlJpc2tGbGFnEiYKC2lzX2hvbmV5cG90GAQgASgLMhEubWVyY3VyeS5SaXNrRmxhZxIrChBsaXF1aWRpdHlfbG9ja2VkGAUgASgLMhEubWVyY3VyeS5SaXNrRmxhZxIsChFyZWNlbnRfZGVwbG95bWVudBgGIAEoCzIRLm1lcmN1cnkuUmlza0ZsYWcSIwoIaXNfcHJveHkYByABKAsyES5tZXJjdXJ5LlJpc2tGbGFnEikKDmlzX29wZW5fc291cmNlGAggASgLMhEubWVyY3VyeS5SaXNrRmxhZxIoCg1pc19hbnRpX3doYWxlGAkgASgLMhEubWVyY3VyeS5SaXNrRmxhZxIoCg1pc19nYXNfYWJ1c2VyGAogASgLMhEubWVyY3VyeS5SaXNrRmxhZxINCgVub3RlcxgyIAEoCSKfAwoRUmlza0ZsYWdGdW5jdGlvbnMSHwoEbWludBgBIAEoCzIRLm1lcmN1cnkuUmlza0ZsYWcSIAoFb3duZXIYAiABKAsyES5tZXJjdXJ5LlJpc2tGbGFnEiAKBXBhdXNlGAMgASgLMhEubWVyY3VyeS5SaXNrRmxhZxIiCgd1bnBhdXNlGAQgASgLMhEubWVyY3VyeS5SaXNrRmxhZxIqCg9zZXRfZmVlX3BlcmNlbnQYBSABKAsyES5tZXJjdXJ5LlJpc2tGbGFnEi0KEnRyYW5zZmVyX293bmVyc2hpcBgGIAEoCzIRLm1lcmN1cnkuUmlza0ZsYWcSLQoScmVub3VuY2Vfb3duZXJzaGlwGAcgASgLMhEubWVyY3VyeS5SaXNrRmxhZxIrChBkaXNhYmxlX3RyYW5zZmVyGAggASgLMhEubWVyY3VyeS5SaXNrRmxhZxIkCglibGFja2xpc3QYCSABKAsyES5tZXJjdXJ5LlJpc2tGbGFnEiQKCXdoaXRlbGlzdBgKIAEoCzIRLm1lcmN1cnkuUmlza0ZsYWciOwoIUmlza0ZsYWcSDQoFdmFsdWUYASABKAgSEAoIc2V2ZXJpdHkYAiABKAUSDgoGcmVhc29uGAMgASgJIu8BCgpIb2xkZXJJbmZvEiEKGXRvcF90ZW5faG9sZGVyX3BlcmNlbnRhZ2UYASABKAESIAoHaG9sZGVycxgCIAMoCzIPLm1lcmN1cnkuSG9sZGVyEiQKHHRvcF90ZW5fbHBfaG9sZGVyX3BlcmNlbnRhZ2UYAyABKAESIwoKbHBfaG9sZGVycxgEIAMoCzIPLm1lcmN1cnkuSG9sZGVyEhwKFGxwX2xvY2tlZF9wZXJjZW50YWdlGAUgASgBEhkKEWxwX2xvY2tlZF9iYWxhbmNlGAYgASgBEhgKEGxwX3RvdGFsX2JhbGFuY2UYByABKAEiUQoGSG9sZGVyEg8KB2FkZHJlc3MYASABKAkSEgoKcGVyY2VudGFnZRgCIAEoARIPCgdiYWxhbmNlGAMgASgBEhEKCWlzX2xvY2tlZBgEIAEoCCJjCgpTb2NpYWxJbmZvEg8KB3dlYnNpdGUYASABKAkSDgoGZ2l0aHViGAIgASgJEg8KB3R3aXR0ZXIYAyABKAkSDgoGcmVkZGl0GAQgASgJEhMKC2Rlc2NyaXB0aW9uGAUgASgJIsgBCgpNYXJrZXRJbmZvEhIKCm1hcmtldF9jYXAYASABKAESEgoKdm9sdW1lXzI0aBgCIAEoARINCgVwcmljZRgDIAEoARIYChBwcmljZV9jaGFuZ2VfMjRoGAQgASgBEiMKG3ByaWNlX2NoYW5nZV9wZXJjZW50YWdlXzI0aBgFIAEoARIaChJjaXJjdWxhdGluZ19zdXBwbHkYBiABKAESFAoMdG90YWxfc3VwcGx5GAcgASgBEhIKCm1heF9zdXBwbHkYCCABKAEyqwEKFE1lcmN1cnlDcnlwdG9TZXJ2aWNlEkcKClNlYXJjaENvaW4SGi5tZXJjdXJ5LlNlYXJjaENvaW5SZXF1ZXN0GhsubWVyY3VyeS5TZWFyY2hDb2luUmVzcG9uc2UiABJKCgtHZXRDb2luUmlzaxIbLm1lcmN1cnkuR2V0Q29pblJpc2tSZXF1ZXN0GhwubWVyY3VyeS5HZXRDb2luUmlza1Jlc3BvbnNlIgBCE1oRbWVyY3VyeS9hcGkvcHJvdG9iBnByb3RvMw");
 
 /**
  * @generated from message mercury.BaseResponse
@@ -42,8 +31,7 @@ export type BaseResponse = Message<"mercury.BaseResponse"> & {
  * Describes the message mercury.BaseResponse.
  * Use `create(BaseResponseSchema)` to create a new message.
  */
-export const BaseResponseSchema: GenMessage<BaseResponse> =
-  /*@__PURE__*/
+export const BaseResponseSchema: GenMessage<BaseResponse> = /*@__PURE__*/
   messageDesc(file_mercury_crypto, 0);
 
 /**
@@ -60,8 +48,7 @@ export type SearchCoinRequest = Message<"mercury.SearchCoinRequest"> & {
  * Describes the message mercury.SearchCoinRequest.
  * Use `create(SearchCoinRequestSchema)` to create a new message.
  */
-export const SearchCoinRequestSchema: GenMessage<SearchCoinRequest> =
-  /*@__PURE__*/
+export const SearchCoinRequestSchema: GenMessage<SearchCoinRequest> = /*@__PURE__*/
   messageDesc(file_mercury_crypto, 1);
 
 /**
@@ -83,8 +70,7 @@ export type SearchCoinResponse = Message<"mercury.SearchCoinResponse"> & {
  * Describes the message mercury.SearchCoinResponse.
  * Use `create(SearchCoinResponseSchema)` to create a new message.
  */
-export const SearchCoinResponseSchema: GenMessage<SearchCoinResponse> =
-  /*@__PURE__*/
+export const SearchCoinResponseSchema: GenMessage<SearchCoinResponse> = /*@__PURE__*/
   messageDesc(file_mercury_crypto, 2);
 
 /**
@@ -121,8 +107,7 @@ export type CoinSearchData = Message<"mercury.CoinSearchData"> & {
  * Describes the message mercury.CoinSearchData.
  * Use `create(CoinSearchDataSchema)` to create a new message.
  */
-export const CoinSearchDataSchema: GenMessage<CoinSearchData> =
-  /*@__PURE__*/
+export const CoinSearchDataSchema: GenMessage<CoinSearchData> = /*@__PURE__*/
   messageDesc(file_mercury_crypto, 3);
 
 /**
@@ -139,8 +124,7 @@ export type GetCoinRiskRequest = Message<"mercury.GetCoinRiskRequest"> & {
  * Describes the message mercury.GetCoinRiskRequest.
  * Use `create(GetCoinRiskRequestSchema)` to create a new message.
  */
-export const GetCoinRiskRequestSchema: GenMessage<GetCoinRiskRequest> =
-  /*@__PURE__*/
+export const GetCoinRiskRequestSchema: GenMessage<GetCoinRiskRequest> = /*@__PURE__*/
   messageDesc(file_mercury_crypto, 4);
 
 /**
@@ -187,8 +171,7 @@ export type GetCoinRiskResponse = Message<"mercury.GetCoinRiskResponse"> & {
  * Describes the message mercury.GetCoinRiskResponse.
  * Use `create(GetCoinRiskResponseSchema)` to create a new message.
  */
-export const GetCoinRiskResponseSchema: GenMessage<GetCoinRiskResponse> =
-  /*@__PURE__*/
+export const GetCoinRiskResponseSchema: GenMessage<GetCoinRiskResponse> = /*@__PURE__*/
   messageDesc(file_mercury_crypto, 5);
 
 /**
@@ -214,8 +197,7 @@ export type RiskScore = Message<"mercury.RiskScore"> & {
  * Describes the message mercury.RiskScore.
  * Use `create(RiskScoreSchema)` to create a new message.
  */
-export const RiskScoreSchema: GenMessage<RiskScore> =
-  /*@__PURE__*/
+export const RiskScoreSchema: GenMessage<RiskScore> = /*@__PURE__*/
   messageDesc(file_mercury_crypto, 6);
 
 /**
@@ -264,8 +246,7 @@ export type TokenInfo = Message<"mercury.TokenInfo"> & {
  * Describes the message mercury.TokenInfo.
  * Use `create(TokenInfoSchema)` to create a new message.
  */
-export const TokenInfoSchema: GenMessage<TokenInfo> =
-  /*@__PURE__*/
+export const TokenInfoSchema: GenMessage<TokenInfo> = /*@__PURE__*/
   messageDesc(file_mercury_crypto, 7);
 
 /**
@@ -334,8 +315,7 @@ export type RiskFlags = Message<"mercury.RiskFlags"> & {
  * Describes the message mercury.RiskFlags.
  * Use `create(RiskFlagsSchema)` to create a new message.
  */
-export const RiskFlagsSchema: GenMessage<RiskFlags> =
-  /*@__PURE__*/
+export const RiskFlagsSchema: GenMessage<RiskFlags> = /*@__PURE__*/
   messageDesc(file_mercury_crypto, 8);
 
 /**
@@ -397,8 +377,7 @@ export type RiskFlagFunctions = Message<"mercury.RiskFlagFunctions"> & {
  * Describes the message mercury.RiskFlagFunctions.
  * Use `create(RiskFlagFunctionsSchema)` to create a new message.
  */
-export const RiskFlagFunctionsSchema: GenMessage<RiskFlagFunctions> =
-  /*@__PURE__*/
+export const RiskFlagFunctionsSchema: GenMessage<RiskFlagFunctions> = /*@__PURE__*/
   messageDesc(file_mercury_crypto, 9);
 
 /**
@@ -431,8 +410,7 @@ export type RiskFlag = Message<"mercury.RiskFlag"> & {
  * Describes the message mercury.RiskFlag.
  * Use `create(RiskFlagSchema)` to create a new message.
  */
-export const RiskFlagSchema: GenMessage<RiskFlag> =
-  /*@__PURE__*/
+export const RiskFlagSchema: GenMessage<RiskFlag> = /*@__PURE__*/
   messageDesc(file_mercury_crypto, 10);
 
 /**
@@ -479,8 +457,7 @@ export type HolderInfo = Message<"mercury.HolderInfo"> & {
  * Describes the message mercury.HolderInfo.
  * Use `create(HolderInfoSchema)` to create a new message.
  */
-export const HolderInfoSchema: GenMessage<HolderInfo> =
-  /*@__PURE__*/
+export const HolderInfoSchema: GenMessage<HolderInfo> = /*@__PURE__*/
   messageDesc(file_mercury_crypto, 11);
 
 /**
@@ -512,8 +489,7 @@ export type Holder = Message<"mercury.Holder"> & {
  * Describes the message mercury.Holder.
  * Use `create(HolderSchema)` to create a new message.
  */
-export const HolderSchema: GenMessage<Holder> =
-  /*@__PURE__*/
+export const HolderSchema: GenMessage<Holder> = /*@__PURE__*/
   messageDesc(file_mercury_crypto, 12);
 
 /**
@@ -550,8 +526,7 @@ export type SocialInfo = Message<"mercury.SocialInfo"> & {
  * Describes the message mercury.SocialInfo.
  * Use `create(SocialInfoSchema)` to create a new message.
  */
-export const SocialInfoSchema: GenMessage<SocialInfo> =
-  /*@__PURE__*/
+export const SocialInfoSchema: GenMessage<SocialInfo> = /*@__PURE__*/
   messageDesc(file_mercury_crypto, 13);
 
 /**
@@ -603,8 +578,7 @@ export type MarketInfo = Message<"mercury.MarketInfo"> & {
  * Describes the message mercury.MarketInfo.
  * Use `create(MarketInfoSchema)` to create a new message.
  */
-export const MarketInfoSchema: GenMessage<MarketInfo> =
-  /*@__PURE__*/
+export const MarketInfoSchema: GenMessage<MarketInfo> = /*@__PURE__*/
   messageDesc(file_mercury_crypto, 14);
 
 /**
@@ -618,7 +592,7 @@ export const MercuryCryptoService: GenService<{
     methodKind: "unary";
     input: typeof SearchCoinRequestSchema;
     output: typeof SearchCoinResponseSchema;
-  };
+  },
   /**
    * @generated from rpc mercury.MercuryCryptoService.GetCoinRisk
    */
@@ -626,5 +600,7 @@ export const MercuryCryptoService: GenService<{
     methodKind: "unary";
     input: typeof GetCoinRiskRequestSchema;
     output: typeof GetCoinRiskResponseSchema;
-  };
-}> = /*@__PURE__*/ serviceDesc(file_mercury_crypto, 0);
+  },
+}> = /*@__PURE__*/
+  serviceDesc(file_mercury_crypto, 0);
+

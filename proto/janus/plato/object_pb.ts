@@ -11,12 +11,8 @@ import type { Message } from "@bufbuild/protobuf";
 /**
  * Describes the file plato/object.proto.
  */
-export const file_plato_object: GenFile =
-  /*@__PURE__*/
-  fileDesc(
-    "ChJwbGF0by9vYmplY3QucHJvdG8SBXBsYXRvIt4BCgVUb3BpYxIKCgJpZBgBIAEoBRIPCgd1c2VyX2lkGAIgASgFEg0KBXRpdGxlGAMgASgJEhMKC2Rlc2NyaXB0aW9uGAQgASgJEgwKBHNsdWcYByABKAkSEQoEbGluaxgIIAEoCUgAiAEBEhAKCGljb25fdXJsGBQgASgJEhcKCmJhbm5lcl91cmwYFSABKAlIAYgBARIcCg90aXRsZV9pbWFnZV91cmwYFiABKAlIAogBAUIHCgVfbGlua0INCgtfYmFubmVyX3VybEISChBfdGl0bGVfaW1hZ2VfdXJsIvwDCgRNb2RlEgoKAmlkGAEgASgFEg0KBXRpdGxlGAIgASgJEhMKC2Rlc2NyaXB0aW9uGAMgASgJEhUKCGljb25fdXJsGAQgASgJSACIAQESGwoOYmFja2dyb3VuZF91cmwYBSABKAlIAYgBARIMCgRUeXBlGAcgASgJEhIKBXRleHQxGAkgASgJSAKIAQESEgoFdGV4dDIYCiABKAlIA4gBARISCgV0ZXh0MxgLIAEoCUgEiAEBEhIKBXRleHQ0GAwgASgJSAWIAQESEgoFdGV4dDUYDSABKAlIBogBARIcCg9hZGRpdGlvbmFsX2RhdGEYDiABKAlIB4gBARIUCgxhbnN3ZXJfdHlwZXMYDyADKAkSFgoOY2F0ZWdvcnlfbmFtZXMYECADKAkSGwoTY2x1ZV9jYXRlZ29yeV9uYW1lcxgRIAMoCRISCgpjbHVlX2NvdW50GBIgASgFEhUKDWNsdWVfaW50ZXJ2YWwYEyABKAUSEgoKY2x1ZV9zdGFydBgUIAEoBRIQCgh0b3BpY19pZBgyIAEoBUILCglfaWNvbl91cmxCEQoPX2JhY2tncm91bmRfdXJsQggKBl90ZXh0MUIICgZfdGV4dDJCCAoGX3RleHQzQggKBl90ZXh0NEIICgZfdGV4dDVCEgoQX2FkZGl0aW9uYWxfZGF0YSJtCgZBbnN3ZXISCgoCaWQYASABKAUSDAoEbmFtZRgCIAEoCRIVCghpY29uX3VybBgDIAEoCUgAiAEBEhMKC2Fuc3dlcl90eXBlGAQgASgJEhAKCHRvcGljX2lkGBQgASgFQgsKCV9pY29uX3VybCJfCgxEZXRhaWxBbnN3ZXISHQoGYW5zd2VyGAEgASgLMg0ucGxhdG8uQW5zd2VyEjAKEWFuc3dlcl9jYXRlZ29yaWVzGAIgAygLMhUucGxhdG8uQW5zd2VyQ2F0ZWdvcnkimAEKE0F0dGVtcHREZXRhaWxBbnN3ZXISHQoGYW5zd2VyGAEgASgLMg0ucGxhdG8uQW5zd2VyEjcKEWFuc3dlcl9jYXRlZ29yaWVzGAIgAygLMhwucGxhdG8uQXR0ZW1wdEFuc3dlckNhdGVnb3J5EhIKCmlzX2NvcnJlY3QYAyABKAgSFQoNdG90YWxfZ3Vlc3NlcxgEIAEoBSKiAQoOQW5zd2VyQ2F0ZWdvcnkSCgoCaWQYASABKAUSDAoEbmFtZRgCIAEoCRIMCgR0eXBlGAMgASgJEg0KBXZhbHVlGAQgASgJEh4KEXZhbHVlX2Rlc2NyaXB0aW9uGAUgASgJSACIAQESEAoIdG9waWNfaWQYCiABKAUSEQoJYW5zd2VyX2lkGAsgASgFQhQKEl92YWx1ZV9kZXNjcmlwdGlvbiJ5CgRDbHVlEgwKBG5hbWUYAiABKAkSDAoEdHlwZRgDIAEoCRINCgV2YWx1ZRgEIAEoCRIeChF2YWx1ZV9kZXNjcmlwdGlvbhgFIAEoCUgAiAEBEhAKCHRvcGljX2lkGAogASgFQhQKEl92YWx1ZV9kZXNjcmlwdGlvbiKIAQoVQXR0ZW1wdEFuc3dlckNhdGVnb3J5EgoKAmlkGAEgASgFEgwKBG5hbWUYAiABKAkSDAoEdHlwZRgDIAEoCRINCgV2YWx1ZRgEIAEoCRITCgtjb3JyZWN0bmVzcxgFIAEoBRIQCgh0b3BpY19pZBgPIAEoBRIRCglhbnN3ZXJfaWQYECABKAUidwoJRGFpbHlHYW1lEgoKAmlkGAEgASgFEigKBGRhdGUYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhEKCWFuc3dlcl9pZBgKIAEoBRIPCgdtb2RlX2lkGAsgASgFEhAKCHRvcGljX2lkGAwgASgFIr0BChpEZXRhaWxEYWlseUdhbWVBbnN3ZXJTdGF0cxIVCg10b3RhbF9ndWVzc2VzGAIgASgFEhcKD2NvcnJlY3RfZ3Vlc3NlcxgDIAEoBRIZChFpbmNvcnJlY3RfZ3Vlc3NlcxgEIAEoBRIVCg1kYWlseV9nYW1lX2lkGAogASgFEhEKCWFuc3dlcl9pZBgLIAEoBRIqCg1kZXRhaWxfYW5zd2VyGAwgASgLMhMucGxhdG8uRGV0YWlsQW5zd2VyIncKE0RhaWx5R2FtZUd1ZXNzU3RhdHMSFQoNdG90YWxfZ3Vlc3NlcxgCIAEoBRIXCg9jb3JyZWN0X2d1ZXNzZXMYAyABKAUSGQoRaW5jb3JyZWN0X2d1ZXNzZXMYBCABKAUSFQoNZGFpbHlfZ2FtZV9pZBgKIAEoBSKnAQoPRGV0YWlsRGFpbHlHYW1lEiQKCmRhaWx5X2dhbWUYASABKAsyEC5wbGF0by5EYWlseUdhbWUSMgoVY3VycmVudF9kZXRhaWxfYW5zd2VyGAIgASgLMhMucGxhdG8uRGV0YWlsQW5zd2VyEjoKFmRhaWx5X2dhbWVfZ3Vlc3Nfc3RhdHMYBSABKAsyGi5wbGF0by5EYWlseUdhbWVHdWVzc1N0YXRzIogBCg9QdWJsaWNEYWlseUdhbWUSFQoNZGFpbHlfZ2FtZV9pZBgBIAEoBRIoCgRkYXRlGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIVCg10b3RhbF9ndWVzc2VzGAMgASgFEh0KFXRvdGFsX2NvcnJlY3RfZ3Vlc3NlcxgEIAEoBUIRWg9wbGF0by9hcGkvcHJvdG9iBnByb3RvMw",
-    [file_google_protobuf_timestamp],
-  );
+export const file_plato_object: GenFile = /*@__PURE__*/
+  fileDesc("ChJwbGF0by9vYmplY3QucHJvdG8SBXBsYXRvIt4BCgVUb3BpYxIKCgJpZBgBIAEoBRIPCgd1c2VyX2lkGAIgASgFEg0KBXRpdGxlGAMgASgJEhMKC2Rlc2NyaXB0aW9uGAQgASgJEgwKBHNsdWcYByABKAkSEQoEbGluaxgIIAEoCUgAiAEBEhAKCGljb25fdXJsGBQgASgJEhcKCmJhbm5lcl91cmwYFSABKAlIAYgBARIcCg90aXRsZV9pbWFnZV91cmwYFiABKAlIAogBAUIHCgVfbGlua0INCgtfYmFubmVyX3VybEISChBfdGl0bGVfaW1hZ2VfdXJsIvwDCgRNb2RlEgoKAmlkGAEgASgFEg0KBXRpdGxlGAIgASgJEhMKC2Rlc2NyaXB0aW9uGAMgASgJEhUKCGljb25fdXJsGAQgASgJSACIAQESGwoOYmFja2dyb3VuZF91cmwYBSABKAlIAYgBARIMCgRUeXBlGAcgASgJEhIKBXRleHQxGAkgASgJSAKIAQESEgoFdGV4dDIYCiABKAlIA4gBARISCgV0ZXh0MxgLIAEoCUgEiAEBEhIKBXRleHQ0GAwgASgJSAWIAQESEgoFdGV4dDUYDSABKAlIBogBARIcCg9hZGRpdGlvbmFsX2RhdGEYDiABKAlIB4gBARIUCgxhbnN3ZXJfdHlwZXMYDyADKAkSFgoOY2F0ZWdvcnlfbmFtZXMYECADKAkSGwoTY2x1ZV9jYXRlZ29yeV9uYW1lcxgRIAMoCRISCgpjbHVlX2NvdW50GBIgASgFEhUKDWNsdWVfaW50ZXJ2YWwYEyABKAUSEgoKY2x1ZV9zdGFydBgUIAEoBRIQCgh0b3BpY19pZBgyIAEoBUILCglfaWNvbl91cmxCEQoPX2JhY2tncm91bmRfdXJsQggKBl90ZXh0MUIICgZfdGV4dDJCCAoGX3RleHQzQggKBl90ZXh0NEIICgZfdGV4dDVCEgoQX2FkZGl0aW9uYWxfZGF0YSJtCgZBbnN3ZXISCgoCaWQYASABKAUSDAoEbmFtZRgCIAEoCRIVCghpY29uX3VybBgDIAEoCUgAiAEBEhMKC2Fuc3dlcl90eXBlGAQgASgJEhAKCHRvcGljX2lkGBQgASgFQgsKCV9pY29uX3VybCJfCgxEZXRhaWxBbnN3ZXISHQoGYW5zd2VyGAEgASgLMg0ucGxhdG8uQW5zd2VyEjAKEWFuc3dlcl9jYXRlZ29yaWVzGAIgAygLMhUucGxhdG8uQW5zd2VyQ2F0ZWdvcnkimAEKE0F0dGVtcHREZXRhaWxBbnN3ZXISHQoGYW5zd2VyGAEgASgLMg0ucGxhdG8uQW5zd2VyEjcKEWFuc3dlcl9jYXRlZ29yaWVzGAIgAygLMhwucGxhdG8uQXR0ZW1wdEFuc3dlckNhdGVnb3J5EhIKCmlzX2NvcnJlY3QYAyABKAgSFQoNdG90YWxfZ3Vlc3NlcxgEIAEoBSKiAQoOQW5zd2VyQ2F0ZWdvcnkSCgoCaWQYASABKAUSDAoEbmFtZRgCIAEoCRIMCgR0eXBlGAMgASgJEg0KBXZhbHVlGAQgASgJEh4KEXZhbHVlX2Rlc2NyaXB0aW9uGAUgASgJSACIAQESEAoIdG9waWNfaWQYCiABKAUSEQoJYW5zd2VyX2lkGAsgASgFQhQKEl92YWx1ZV9kZXNjcmlwdGlvbiJ5CgRDbHVlEgwKBG5hbWUYAiABKAkSDAoEdHlwZRgDIAEoCRINCgV2YWx1ZRgEIAEoCRIeChF2YWx1ZV9kZXNjcmlwdGlvbhgFIAEoCUgAiAEBEhAKCHRvcGljX2lkGAogASgFQhQKEl92YWx1ZV9kZXNjcmlwdGlvbiKIAQoVQXR0ZW1wdEFuc3dlckNhdGVnb3J5EgoKAmlkGAEgASgFEgwKBG5hbWUYAiABKAkSDAoEdHlwZRgDIAEoCRINCgV2YWx1ZRgEIAEoCRITCgtjb3JyZWN0bmVzcxgFIAEoBRIQCgh0b3BpY19pZBgPIAEoBRIRCglhbnN3ZXJfaWQYECABKAUidwoJRGFpbHlHYW1lEgoKAmlkGAEgASgFEigKBGRhdGUYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhEKCWFuc3dlcl9pZBgKIAEoBRIPCgdtb2RlX2lkGAsgASgFEhAKCHRvcGljX2lkGAwgASgFIr0BChpEZXRhaWxEYWlseUdhbWVBbnN3ZXJTdGF0cxIVCg10b3RhbF9ndWVzc2VzGAIgASgFEhcKD2NvcnJlY3RfZ3Vlc3NlcxgDIAEoBRIZChFpbmNvcnJlY3RfZ3Vlc3NlcxgEIAEoBRIVCg1kYWlseV9nYW1lX2lkGAogASgFEhEKCWFuc3dlcl9pZBgLIAEoBRIqCg1kZXRhaWxfYW5zd2VyGAwgASgLMhMucGxhdG8uRGV0YWlsQW5zd2VyIncKE0RhaWx5R2FtZUd1ZXNzU3RhdHMSFQoNdG90YWxfZ3Vlc3NlcxgCIAEoBRIXCg9jb3JyZWN0X2d1ZXNzZXMYAyABKAUSGQoRaW5jb3JyZWN0X2d1ZXNzZXMYBCABKAUSFQoNZGFpbHlfZ2FtZV9pZBgKIAEoBSKnAQoPRGV0YWlsRGFpbHlHYW1lEiQKCmRhaWx5X2dhbWUYASABKAsyEC5wbGF0by5EYWlseUdhbWUSMgoVY3VycmVudF9kZXRhaWxfYW5zd2VyGAIgASgLMhMucGxhdG8uRGV0YWlsQW5zd2VyEjoKFmRhaWx5X2dhbWVfZ3Vlc3Nfc3RhdHMYBSABKAsyGi5wbGF0by5EYWlseUdhbWVHdWVzc1N0YXRzIogBCg9QdWJsaWNEYWlseUdhbWUSFQoNZGFpbHlfZ2FtZV9pZBgBIAEoBRIoCgRkYXRlGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIVCg10b3RhbF9ndWVzc2VzGAMgASgFEh0KFXRvdGFsX2NvcnJlY3RfZ3Vlc3NlcxgEIAEoBUIRWg9wbGF0by9hcGkvcHJvdG9iBnByb3RvMw", [file_google_protobuf_timestamp]);
 
 /**
  * @generated from message plato.Topic
@@ -72,8 +68,7 @@ export type Topic = Message<"plato.Topic"> & {
  * Describes the message plato.Topic.
  * Use `create(TopicSchema)` to create a new message.
  */
-export const TopicSchema: GenMessage<Topic> =
-  /*@__PURE__*/
+export const TopicSchema: GenMessage<Topic> = /*@__PURE__*/
   messageDesc(file_plato_object, 0);
 
 /**
@@ -190,8 +185,7 @@ export type Mode = Message<"plato.Mode"> & {
  * Describes the message plato.Mode.
  * Use `create(ModeSchema)` to create a new message.
  */
-export const ModeSchema: GenMessage<Mode> =
-  /*@__PURE__*/
+export const ModeSchema: GenMessage<Mode> = /*@__PURE__*/
   messageDesc(file_plato_object, 1);
 
 /**
@@ -230,8 +224,7 @@ export type Answer = Message<"plato.Answer"> & {
  * Describes the message plato.Answer.
  * Use `create(AnswerSchema)` to create a new message.
  */
-export const AnswerSchema: GenMessage<Answer> =
-  /*@__PURE__*/
+export const AnswerSchema: GenMessage<Answer> = /*@__PURE__*/
   messageDesc(file_plato_object, 2);
 
 /**
@@ -253,8 +246,7 @@ export type DetailAnswer = Message<"plato.DetailAnswer"> & {
  * Describes the message plato.DetailAnswer.
  * Use `create(DetailAnswerSchema)` to create a new message.
  */
-export const DetailAnswerSchema: GenMessage<DetailAnswer> =
-  /*@__PURE__*/
+export const DetailAnswerSchema: GenMessage<DetailAnswer> = /*@__PURE__*/
   messageDesc(file_plato_object, 3);
 
 /**
@@ -286,8 +278,7 @@ export type AttemptDetailAnswer = Message<"plato.AttemptDetailAnswer"> & {
  * Describes the message plato.AttemptDetailAnswer.
  * Use `create(AttemptDetailAnswerSchema)` to create a new message.
  */
-export const AttemptDetailAnswerSchema: GenMessage<AttemptDetailAnswer> =
-  /*@__PURE__*/
+export const AttemptDetailAnswerSchema: GenMessage<AttemptDetailAnswer> = /*@__PURE__*/
   messageDesc(file_plato_object, 4);
 
 /**
@@ -334,8 +325,7 @@ export type AnswerCategory = Message<"plato.AnswerCategory"> & {
  * Describes the message plato.AnswerCategory.
  * Use `create(AnswerCategorySchema)` to create a new message.
  */
-export const AnswerCategorySchema: GenMessage<AnswerCategory> =
-  /*@__PURE__*/
+export const AnswerCategorySchema: GenMessage<AnswerCategory> = /*@__PURE__*/
   messageDesc(file_plato_object, 5);
 
 /**
@@ -372,8 +362,7 @@ export type Clue = Message<"plato.Clue"> & {
  * Describes the message plato.Clue.
  * Use `create(ClueSchema)` to create a new message.
  */
-export const ClueSchema: GenMessage<Clue> =
-  /*@__PURE__*/
+export const ClueSchema: GenMessage<Clue> = /*@__PURE__*/
   messageDesc(file_plato_object, 6);
 
 /**
@@ -426,8 +415,7 @@ export type AttemptAnswerCategory = Message<"plato.AttemptAnswerCategory"> & {
  * Describes the message plato.AttemptAnswerCategory.
  * Use `create(AttemptAnswerCategorySchema)` to create a new message.
  */
-export const AttemptAnswerCategorySchema: GenMessage<AttemptAnswerCategory> =
-  /*@__PURE__*/
+export const AttemptAnswerCategorySchema: GenMessage<AttemptAnswerCategory> = /*@__PURE__*/
   messageDesc(file_plato_object, 7);
 
 /**
@@ -464,52 +452,49 @@ export type DailyGame = Message<"plato.DailyGame"> & {
  * Describes the message plato.DailyGame.
  * Use `create(DailyGameSchema)` to create a new message.
  */
-export const DailyGameSchema: GenMessage<DailyGame> =
-  /*@__PURE__*/
+export const DailyGameSchema: GenMessage<DailyGame> = /*@__PURE__*/
   messageDesc(file_plato_object, 8);
 
 /**
  * @generated from message plato.DetailDailyGameAnswerStats
  */
-export type DetailDailyGameAnswerStats =
-  Message<"plato.DetailDailyGameAnswerStats"> & {
-    /**
-     * @generated from field: int32 total_guesses = 2;
-     */
-    totalGuesses: number;
+export type DetailDailyGameAnswerStats = Message<"plato.DetailDailyGameAnswerStats"> & {
+  /**
+   * @generated from field: int32 total_guesses = 2;
+   */
+  totalGuesses: number;
 
-    /**
-     * @generated from field: int32 correct_guesses = 3;
-     */
-    correctGuesses: number;
+  /**
+   * @generated from field: int32 correct_guesses = 3;
+   */
+  correctGuesses: number;
 
-    /**
-     * @generated from field: int32 incorrect_guesses = 4;
-     */
-    incorrectGuesses: number;
+  /**
+   * @generated from field: int32 incorrect_guesses = 4;
+   */
+  incorrectGuesses: number;
 
-    /**
-     * @generated from field: int32 daily_game_id = 10;
-     */
-    dailyGameId: number;
+  /**
+   * @generated from field: int32 daily_game_id = 10;
+   */
+  dailyGameId: number;
 
-    /**
-     * @generated from field: int32 answer_id = 11;
-     */
-    answerId: number;
+  /**
+   * @generated from field: int32 answer_id = 11;
+   */
+  answerId: number;
 
-    /**
-     * @generated from field: plato.DetailAnswer detail_answer = 12;
-     */
-    detailAnswer?: DetailAnswer;
-  };
+  /**
+   * @generated from field: plato.DetailAnswer detail_answer = 12;
+   */
+  detailAnswer?: DetailAnswer;
+};
 
 /**
  * Describes the message plato.DetailDailyGameAnswerStats.
  * Use `create(DetailDailyGameAnswerStatsSchema)` to create a new message.
  */
-export const DetailDailyGameAnswerStatsSchema: GenMessage<DetailDailyGameAnswerStats> =
-  /*@__PURE__*/
+export const DetailDailyGameAnswerStatsSchema: GenMessage<DetailDailyGameAnswerStats> = /*@__PURE__*/
   messageDesc(file_plato_object, 9);
 
 /**
@@ -541,8 +526,7 @@ export type DailyGameGuessStats = Message<"plato.DailyGameGuessStats"> & {
  * Describes the message plato.DailyGameGuessStats.
  * Use `create(DailyGameGuessStatsSchema)` to create a new message.
  */
-export const DailyGameGuessStatsSchema: GenMessage<DailyGameGuessStats> =
-  /*@__PURE__*/
+export const DailyGameGuessStatsSchema: GenMessage<DailyGameGuessStats> = /*@__PURE__*/
   messageDesc(file_plato_object, 10);
 
 /**
@@ -569,8 +553,7 @@ export type DetailDailyGame = Message<"plato.DetailDailyGame"> & {
  * Describes the message plato.DetailDailyGame.
  * Use `create(DetailDailyGameSchema)` to create a new message.
  */
-export const DetailDailyGameSchema: GenMessage<DetailDailyGame> =
-  /*@__PURE__*/
+export const DetailDailyGameSchema: GenMessage<DetailDailyGame> = /*@__PURE__*/
   messageDesc(file_plato_object, 11);
 
 /**
@@ -602,6 +585,6 @@ export type PublicDailyGame = Message<"plato.PublicDailyGame"> & {
  * Describes the message plato.PublicDailyGame.
  * Use `create(PublicDailyGameSchema)` to create a new message.
  */
-export const PublicDailyGameSchema: GenMessage<PublicDailyGame> =
-  /*@__PURE__*/
+export const PublicDailyGameSchema: GenMessage<PublicDailyGame> = /*@__PURE__*/
   messageDesc(file_plato_object, 12);
+

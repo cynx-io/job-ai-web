@@ -11,12 +11,8 @@ import type { Message } from "@bufbuild/protobuf";
 /**
  * Describes the file philyra/entity.proto.
  */
-export const file_philyra_entity: GenFile =
-  /*@__PURE__*/
-  fileDesc(
-    "ChRwaGlseXJhL2VudGl0eS5wcm90bxIHcGhpbHlyYSKVAwoGUmVzdW1lEgoKAmlkGAEgASgFEjAKDGNyZWF0ZWRfZGF0ZRgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASMAoMdXBkYXRlZF9kYXRlGAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBINCgV0aXRsZRgEIAEoCRIRCglmdWxsX25hbWUYBSABKAkSDQoFZW1haWwYBiABKAkSDQoFcGhvbmUYByABKAkSDwoHYWRkcmVzcxgIIAEoCRIPCgdzdW1tYXJ5GAkgASgJEhIKCmV4cGVyaWVuY2UYCiABKAkSEQoJZWR1Y2F0aW9uGAsgASgJEg4KBnNraWxscxgMIAEoCRIWCg5jZXJ0aWZpY2F0aW9ucxgNIAEoCRIQCghwcm9qZWN0cxgOIAEoCRIRCglsYW5ndWFnZXMYDyABKAkSEgoKcmVmZXJlbmNlcxgQIAEoCRIQCghmaWxlX3VybBgRIAEoCRIOCgZzdGF0dXMYEiABKAkSDwoHdXNlcl9pZBgTIAEoBSJ0CgxQZXJzb25hbEluZm8SEQoJZnVsbF9uYW1lGAEgASgJEg0KBWVtYWlsGAIgASgJEg0KBXBob25lGAMgASgJEhAKCGxvY2F0aW9uGAQgASgJEhAKCGxpbmtlZGluGAUgASgJEg8KB3dlYnNpdGUYBiABKAki5QEKCkV4cGVyaWVuY2USCgoCaWQYASABKAUSDwoHY29tcGFueRgCIAEoCRIQCghwb3NpdGlvbhgDIAEoCRIQCghsb2NhdGlvbhgEIAEoCRIuCgpzdGFydF9kYXRlGAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIsCghlbmRfZGF0ZRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASEwoLZGVzY3JpcHRpb24YByABKAkSFAoMYWNoaWV2ZW1lbnRzGAggAygJEg0KBW9yZGVyGAkgASgFIq4BCglFZHVjYXRpb24SCgoCaWQYASABKAUSEwoLaW5zdGl0dXRpb24YAiABKAkSDgoGZGVncmVlGAMgASgJEg0KBWZpZWxkGAQgASgJEhAKCGxvY2F0aW9uGAUgASgJEjMKD2dyYWR1YXRpb25fZGF0ZRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASCwoDZ3BhGAcgASgJEg0KBW9yZGVyGAggASgFIkEKBlNraWxscxIRCgl0ZWNobmljYWwYASADKAkSDAoEc29mdBgCIAMoCRIWCg5jZXJ0aWZpY2F0aW9ucxgDIAMoCSLAAQoOU3RydWN0dXJlZERhdGESLAoNcGVyc29uYWxfaW5mbxgBIAEoCzIVLnBoaWx5cmEuUGVyc29uYWxJbmZvEg8KB3N1bW1hcnkYAiABKAkSJwoKZXhwZXJpZW5jZRgDIAMoCzITLnBoaWx5cmEuRXhwZXJpZW5jZRIlCgllZHVjYXRpb24YBCADKAsyEi5waGlseXJhLkVkdWNhdGlvbhIfCgZza2lsbHMYBSABKAsyDy5waGlseXJhLlNraWxscyLiAQoPR2VuZXJhdGVkUmVzdW1lEgoKAmlkGAEgASgFEg8KB3VzZXJfaWQYAiABKAUSDQoFdGl0bGUYAyABKAkSMAoPc3RydWN0dXJlZF9kYXRhGAQgASgLMhcucGhpbHlyYS5TdHJ1Y3R1cmVkRGF0YRIRCglhdHNfc2NvcmUYBSABKAUSLgoKY3JlYXRlZF9hdBgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLgoKdXBkYXRlZF9hdBgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCE1oRcGhpbHlyYS9hcGkvcHJvdG9iBnByb3RvMw",
-    [file_google_protobuf_timestamp],
-  );
+export const file_philyra_entity: GenFile = /*@__PURE__*/
+  fileDesc("ChRwaGlseXJhL2VudGl0eS5wcm90bxIHcGhpbHlyYSKVAwoGUmVzdW1lEgoKAmlkGAEgASgFEjAKDGNyZWF0ZWRfZGF0ZRgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASMAoMdXBkYXRlZF9kYXRlGAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBINCgV0aXRsZRgEIAEoCRIRCglmdWxsX25hbWUYBSABKAkSDQoFZW1haWwYBiABKAkSDQoFcGhvbmUYByABKAkSDwoHYWRkcmVzcxgIIAEoCRIPCgdzdW1tYXJ5GAkgASgJEhIKCmV4cGVyaWVuY2UYCiABKAkSEQoJZWR1Y2F0aW9uGAsgASgJEg4KBnNraWxscxgMIAEoCRIWCg5jZXJ0aWZpY2F0aW9ucxgNIAEoCRIQCghwcm9qZWN0cxgOIAEoCRIRCglsYW5ndWFnZXMYDyABKAkSEgoKcmVmZXJlbmNlcxgQIAEoCRIQCghmaWxlX3VybBgRIAEoCRIOCgZzdGF0dXMYEiABKAkSDwoHdXNlcl9pZBgTIAEoBSJ0CgxQZXJzb25hbEluZm8SEQoJZnVsbF9uYW1lGAEgASgJEg0KBWVtYWlsGAIgASgJEg0KBXBob25lGAMgASgJEhAKCGxvY2F0aW9uGAQgASgJEhAKCGxpbmtlZGluGAUgASgJEg8KB3dlYnNpdGUYBiABKAki5QEKCkV4cGVyaWVuY2USCgoCaWQYASABKAUSDwoHY29tcGFueRgCIAEoCRIQCghwb3NpdGlvbhgDIAEoCRIQCghsb2NhdGlvbhgEIAEoCRIuCgpzdGFydF9kYXRlGAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIsCghlbmRfZGF0ZRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASEwoLZGVzY3JpcHRpb24YByABKAkSFAoMYWNoaWV2ZW1lbnRzGAggAygJEg0KBW9yZGVyGAkgASgFIq4BCglFZHVjYXRpb24SCgoCaWQYASABKAUSEwoLaW5zdGl0dXRpb24YAiABKAkSDgoGZGVncmVlGAMgASgJEg0KBWZpZWxkGAQgASgJEhAKCGxvY2F0aW9uGAUgASgJEjMKD2dyYWR1YXRpb25fZGF0ZRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASCwoDZ3BhGAcgASgJEg0KBW9yZGVyGAggASgFIkEKBlNraWxscxIRCgl0ZWNobmljYWwYASADKAkSDAoEc29mdBgCIAMoCRIWCg5jZXJ0aWZpY2F0aW9ucxgDIAMoCSLAAQoOU3RydWN0dXJlZERhdGESLAoNcGVyc29uYWxfaW5mbxgBIAEoCzIVLnBoaWx5cmEuUGVyc29uYWxJbmZvEg8KB3N1bW1hcnkYAiABKAkSJwoKZXhwZXJpZW5jZRgDIAMoCzITLnBoaWx5cmEuRXhwZXJpZW5jZRIlCgllZHVjYXRpb24YBCADKAsyEi5waGlseXJhLkVkdWNhdGlvbhIfCgZza2lsbHMYBSABKAsyDy5waGlseXJhLlNraWxscyLiAQoPR2VuZXJhdGVkUmVzdW1lEgoKAmlkGAEgASgFEg8KB3VzZXJfaWQYAiABKAUSDQoFdGl0bGUYAyABKAkSMAoPc3RydWN0dXJlZF9kYXRhGAQgASgLMhcucGhpbHlyYS5TdHJ1Y3R1cmVkRGF0YRIRCglhdHNfc2NvcmUYBSABKAUSLgoKY3JlYXRlZF9hdBgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLgoKdXBkYXRlZF9hdBgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCE1oRcGhpbHlyYS9hcGkvcHJvdG9iBnByb3RvMw", [file_google_protobuf_timestamp]);
 
 /**
  * @generated from message philyra.Resume
@@ -122,8 +118,7 @@ export type Resume = Message<"philyra.Resume"> & {
  * Describes the message philyra.Resume.
  * Use `create(ResumeSchema)` to create a new message.
  */
-export const ResumeSchema: GenMessage<Resume> =
-  /*@__PURE__*/
+export const ResumeSchema: GenMessage<Resume> = /*@__PURE__*/
   messageDesc(file_philyra_entity, 0);
 
 /**
@@ -165,8 +160,7 @@ export type PersonalInfo = Message<"philyra.PersonalInfo"> & {
  * Describes the message philyra.PersonalInfo.
  * Use `create(PersonalInfoSchema)` to create a new message.
  */
-export const PersonalInfoSchema: GenMessage<PersonalInfo> =
-  /*@__PURE__*/
+export const PersonalInfoSchema: GenMessage<PersonalInfo> = /*@__PURE__*/
   messageDesc(file_philyra_entity, 1);
 
 /**
@@ -223,8 +217,7 @@ export type Experience = Message<"philyra.Experience"> & {
  * Describes the message philyra.Experience.
  * Use `create(ExperienceSchema)` to create a new message.
  */
-export const ExperienceSchema: GenMessage<Experience> =
-  /*@__PURE__*/
+export const ExperienceSchema: GenMessage<Experience> = /*@__PURE__*/
   messageDesc(file_philyra_entity, 2);
 
 /**
@@ -276,8 +269,7 @@ export type Education = Message<"philyra.Education"> & {
  * Describes the message philyra.Education.
  * Use `create(EducationSchema)` to create a new message.
  */
-export const EducationSchema: GenMessage<Education> =
-  /*@__PURE__*/
+export const EducationSchema: GenMessage<Education> = /*@__PURE__*/
   messageDesc(file_philyra_entity, 3);
 
 /**
@@ -304,8 +296,7 @@ export type Skills = Message<"philyra.Skills"> & {
  * Describes the message philyra.Skills.
  * Use `create(SkillsSchema)` to create a new message.
  */
-export const SkillsSchema: GenMessage<Skills> =
-  /*@__PURE__*/
+export const SkillsSchema: GenMessage<Skills> = /*@__PURE__*/
   messageDesc(file_philyra_entity, 4);
 
 /**
@@ -342,8 +333,7 @@ export type StructuredData = Message<"philyra.StructuredData"> & {
  * Describes the message philyra.StructuredData.
  * Use `create(StructuredDataSchema)` to create a new message.
  */
-export const StructuredDataSchema: GenMessage<StructuredData> =
-  /*@__PURE__*/
+export const StructuredDataSchema: GenMessage<StructuredData> = /*@__PURE__*/
   messageDesc(file_philyra_entity, 5);
 
 /**
@@ -390,6 +380,6 @@ export type GeneratedResume = Message<"philyra.GeneratedResume"> & {
  * Describes the message philyra.GeneratedResume.
  * Use `create(GeneratedResumeSchema)` to create a new message.
  */
-export const GeneratedResumeSchema: GenMessage<GeneratedResume> =
-  /*@__PURE__*/
+export const GeneratedResumeSchema: GenMessage<GeneratedResume> = /*@__PURE__*/
   messageDesc(file_philyra_entity, 6);
+

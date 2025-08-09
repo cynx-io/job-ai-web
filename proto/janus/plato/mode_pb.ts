@@ -2,38 +2,21 @@
 // @generated from file plato/mode.proto (package plato, syntax proto3)
 /* eslint-disable */
 
-import type {
-  GenFile,
-  GenMessage,
-  GenService,
-} from "@bufbuild/protobuf/codegenv2";
-import {
-  fileDesc,
-  messageDesc,
-  serviceDesc,
-} from "@bufbuild/protobuf/codegenv2";
-import type {
-  BaseRequest,
-  BaseResponse,
-  GenericResponseSchema,
-} from "../core_pb";
+import type { GenFile, GenMessage, GenService } from "@bufbuild/protobuf/codegenv2";
+import { fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv2";
+import type { BaseRequest, BaseResponse, GenericResponseSchema } from "../core_pb";
 import { file_core } from "../core_pb";
 import type { ModeIdRequestSchema, TopicIdRequestSchema } from "./generic_pb";
 import { file_plato_generic } from "./generic_pb";
 import type { DailyGameGuessStats, Mode } from "./object_pb";
 import { file_plato_object } from "./object_pb";
-
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file plato/mode.proto.
  */
-export const file_plato_mode: GenFile =
-  /*@__PURE__*/
-  fileDesc(
-    "ChBwbGF0by9tb2RlLnByb3RvEgVwbGF0byJRChFMaXN0TW9kZXNSZXNwb25zZRIgCgRiYXNlGAEgASgLMhIuY29yZS5CYXNlUmVzcG9uc2USGgoFbW9kZXMYAiADKAsyCy5wbGF0by5Nb2RlIqYBCgxNb2RlUmVzcG9uc2USIAoEYmFzZRgBIAEoCzISLmNvcmUuQmFzZVJlc3BvbnNlEhkKBG1vZGUYAiABKAsyCy5wbGF0by5Nb2RlEh0KFWN1cnJlbnRfZGFpbHlfZ2FtZV9pZBgDIAEoBRI6ChZkYWlseV9nYW1lX2d1ZXNzX3N0YXRzGAQgASgLMhoucGxhdG8uRGFpbHlHYW1lR3Vlc3NTdGF0cyKmAQoRSW5zZXJ0TW9kZVJlcXVlc3QSJwoEYmFzZRgBIAEoCzIRLmNvcmUuQmFzZVJlcXVlc3RCBrpIA8gBARINCgV0aXRsZRgCIAEoCRITCgtkZXNjcmlwdGlvbhgDIAEoCRIQCghpY29uX3VybBgEIAEoCRISCgpiYW5uZXJfdXJsGAUgASgJEgwKBHNsdWcYBiABKAkSEAoIdG9waWNfaWQYByABKAUi3AEKEVVwZGF0ZU1vZGVSZXF1ZXN0EicKBGJhc2UYASABKAsyES5jb3JlLkJhc2VSZXF1ZXN0Qga6SAPIAQESCgoCaWQYAiABKAUSEgoFdGl0bGUYAyABKAlIAIgBARIYCgtkZXNjcmlwdGlvbhgEIAEoCUgBiAEBEhUKCGljb25fdXJsGAUgASgJSAKIAQESFwoKYmFubmVyX3VybBgGIAEoCUgDiAEBQggKBl90aXRsZUIOCgxfZGVzY3JpcHRpb25CCwoJX2ljb25fdXJsQg0KC19iYW5uZXJfdXJsMtICChBQbGF0b01vZGVTZXJ2aWNlEjoKC0dldE1vZGVCeUlkEhQucGxhdG8uTW9kZUlkUmVxdWVzdBoTLnBsYXRvLk1vZGVSZXNwb25zZSIAEj0KCkluc2VydE1vZGUSGC5wbGF0by5JbnNlcnRNb2RlUmVxdWVzdBoTLnBsYXRvLk1vZGVSZXNwb25zZSIAEj0KClVwZGF0ZU1vZGUSGC5wbGF0by5VcGRhdGVNb2RlUmVxdWVzdBoTLnBsYXRvLk1vZGVSZXNwb25zZSIAEjsKCkRlbGV0ZU1vZGUSFC5wbGF0by5Nb2RlSWRSZXF1ZXN0GhUuY29yZS5HZW5lcmljUmVzcG9uc2UiABJHChJMaXN0TW9kZXNCeVRvcGljSWQSFS5wbGF0by5Ub3BpY0lkUmVxdWVzdBoYLnBsYXRvLkxpc3RNb2Rlc1Jlc3BvbnNlIgBCEVoPcGxhdG8vYXBpL3Byb3RvYgZwcm90bzM",
-    [file_core, file_plato_generic, file_plato_object],
-  );
+export const file_plato_mode: GenFile = /*@__PURE__*/
+  fileDesc("ChBwbGF0by9tb2RlLnByb3RvEgVwbGF0byJRChFMaXN0TW9kZXNSZXNwb25zZRIgCgRiYXNlGAEgASgLMhIuY29yZS5CYXNlUmVzcG9uc2USGgoFbW9kZXMYAiADKAsyCy5wbGF0by5Nb2RlIqYBCgxNb2RlUmVzcG9uc2USIAoEYmFzZRgBIAEoCzISLmNvcmUuQmFzZVJlc3BvbnNlEhkKBG1vZGUYAiABKAsyCy5wbGF0by5Nb2RlEh0KFWN1cnJlbnRfZGFpbHlfZ2FtZV9pZBgDIAEoBRI6ChZkYWlseV9nYW1lX2d1ZXNzX3N0YXRzGAQgASgLMhoucGxhdG8uRGFpbHlHYW1lR3Vlc3NTdGF0cyKmAQoRSW5zZXJ0TW9kZVJlcXVlc3QSJwoEYmFzZRgBIAEoCzIRLmNvcmUuQmFzZVJlcXVlc3RCBrpIA8gBARINCgV0aXRsZRgCIAEoCRITCgtkZXNjcmlwdGlvbhgDIAEoCRIQCghpY29uX3VybBgEIAEoCRISCgpiYW5uZXJfdXJsGAUgASgJEgwKBHNsdWcYBiABKAkSEAoIdG9waWNfaWQYByABKAUi3AEKEVVwZGF0ZU1vZGVSZXF1ZXN0EicKBGJhc2UYASABKAsyES5jb3JlLkJhc2VSZXF1ZXN0Qga6SAPIAQESCgoCaWQYAiABKAUSEgoFdGl0bGUYAyABKAlIAIgBARIYCgtkZXNjcmlwdGlvbhgEIAEoCUgBiAEBEhUKCGljb25fdXJsGAUgASgJSAKIAQESFwoKYmFubmVyX3VybBgGIAEoCUgDiAEBQggKBl90aXRsZUIOCgxfZGVzY3JpcHRpb25CCwoJX2ljb25fdXJsQg0KC19iYW5uZXJfdXJsMtICChBQbGF0b01vZGVTZXJ2aWNlEjoKC0dldE1vZGVCeUlkEhQucGxhdG8uTW9kZUlkUmVxdWVzdBoTLnBsYXRvLk1vZGVSZXNwb25zZSIAEj0KCkluc2VydE1vZGUSGC5wbGF0by5JbnNlcnRNb2RlUmVxdWVzdBoTLnBsYXRvLk1vZGVSZXNwb25zZSIAEj0KClVwZGF0ZU1vZGUSGC5wbGF0by5VcGRhdGVNb2RlUmVxdWVzdBoTLnBsYXRvLk1vZGVSZXNwb25zZSIAEjsKCkRlbGV0ZU1vZGUSFC5wbGF0by5Nb2RlSWRSZXF1ZXN0GhUuY29yZS5HZW5lcmljUmVzcG9uc2UiABJHChJMaXN0TW9kZXNCeVRvcGljSWQSFS5wbGF0by5Ub3BpY0lkUmVxdWVzdBoYLnBsYXRvLkxpc3RNb2Rlc1Jlc3BvbnNlIgBCEVoPcGxhdG8vYXBpL3Byb3RvYgZwcm90bzM", [file_core, file_plato_generic, file_plato_object]);
 
 /**
  * @generated from message plato.ListModesResponse
@@ -54,8 +37,7 @@ export type ListModesResponse = Message<"plato.ListModesResponse"> & {
  * Describes the message plato.ListModesResponse.
  * Use `create(ListModesResponseSchema)` to create a new message.
  */
-export const ListModesResponseSchema: GenMessage<ListModesResponse> =
-  /*@__PURE__*/
+export const ListModesResponseSchema: GenMessage<ListModesResponse> = /*@__PURE__*/
   messageDesc(file_plato_mode, 0);
 
 /**
@@ -87,8 +69,7 @@ export type ModeResponse = Message<"plato.ModeResponse"> & {
  * Describes the message plato.ModeResponse.
  * Use `create(ModeResponseSchema)` to create a new message.
  */
-export const ModeResponseSchema: GenMessage<ModeResponse> =
-  /*@__PURE__*/
+export const ModeResponseSchema: GenMessage<ModeResponse> = /*@__PURE__*/
   messageDesc(file_plato_mode, 1);
 
 /**
@@ -135,8 +116,7 @@ export type InsertModeRequest = Message<"plato.InsertModeRequest"> & {
  * Describes the message plato.InsertModeRequest.
  * Use `create(InsertModeRequestSchema)` to create a new message.
  */
-export const InsertModeRequestSchema: GenMessage<InsertModeRequest> =
-  /*@__PURE__*/
+export const InsertModeRequestSchema: GenMessage<InsertModeRequest> = /*@__PURE__*/
   messageDesc(file_plato_mode, 2);
 
 /**
@@ -178,8 +158,7 @@ export type UpdateModeRequest = Message<"plato.UpdateModeRequest"> & {
  * Describes the message plato.UpdateModeRequest.
  * Use `create(UpdateModeRequestSchema)` to create a new message.
  */
-export const UpdateModeRequestSchema: GenMessage<UpdateModeRequest> =
-  /*@__PURE__*/
+export const UpdateModeRequestSchema: GenMessage<UpdateModeRequest> = /*@__PURE__*/
   messageDesc(file_plato_mode, 3);
 
 /**
@@ -193,7 +172,7 @@ export const PlatoModeService: GenService<{
     methodKind: "unary";
     input: typeof ModeIdRequestSchema;
     output: typeof ModeResponseSchema;
-  };
+  },
   /**
    * @generated from rpc plato.PlatoModeService.InsertMode
    */
@@ -201,7 +180,7 @@ export const PlatoModeService: GenService<{
     methodKind: "unary";
     input: typeof InsertModeRequestSchema;
     output: typeof ModeResponseSchema;
-  };
+  },
   /**
    * @generated from rpc plato.PlatoModeService.UpdateMode
    */
@@ -209,7 +188,7 @@ export const PlatoModeService: GenService<{
     methodKind: "unary";
     input: typeof UpdateModeRequestSchema;
     output: typeof ModeResponseSchema;
-  };
+  },
   /**
    * @generated from rpc plato.PlatoModeService.DeleteMode
    */
@@ -217,7 +196,7 @@ export const PlatoModeService: GenService<{
     methodKind: "unary";
     input: typeof ModeIdRequestSchema;
     output: typeof GenericResponseSchema;
-  };
+  },
   /**
    * @generated from rpc plato.PlatoModeService.ListModesByTopicId
    */
@@ -225,5 +204,7 @@ export const PlatoModeService: GenService<{
     methodKind: "unary";
     input: typeof TopicIdRequestSchema;
     output: typeof ListModesResponseSchema;
-  };
-}> = /*@__PURE__*/ serviceDesc(file_plato_mode, 0);
+  },
+}> = /*@__PURE__*/
+  serviceDesc(file_plato_mode, 0);
+

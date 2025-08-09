@@ -2,43 +2,21 @@
 // @generated from file plato/dailygame.proto (package plato, syntax proto3)
 /* eslint-disable */
 
-import type {
-  GenFile,
-  GenMessage,
-  GenService,
-} from "@bufbuild/protobuf/codegenv2";
-import {
-  fileDesc,
-  messageDesc,
-  serviceDesc,
-} from "@bufbuild/protobuf/codegenv2";
+import type { GenFile, GenMessage, GenService } from "@bufbuild/protobuf/codegenv2";
+import { fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv2";
 import type { BaseRequest, BaseResponse } from "../core_pb";
 import { file_core } from "../core_pb";
-import type {
-  DailyGameIdRequestSchema,
-  ModeIdRequestSchema,
-} from "./generic_pb";
+import type { DailyGameIdRequestSchema, ModeIdRequestSchema } from "./generic_pb";
 import { file_plato_generic } from "./generic_pb";
-import type {
-  AttemptDetailAnswer,
-  Clue,
-  DetailDailyGame,
-  Mode,
-  PublicDailyGame,
-} from "./object_pb";
+import type { AttemptDetailAnswer, Clue, DetailDailyGame, Mode, PublicDailyGame } from "./object_pb";
 import { file_plato_object } from "./object_pb";
-
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file plato/dailygame.proto.
  */
-export const file_plato_dailygame: GenFile =
-  /*@__PURE__*/
-  fileDesc(
-    "ChVwbGF0by9kYWlseWdhbWUucHJvdG8SBXBsYXRvImsKFU1vZGVEYWlseUdhbWVSZXNwb25zZRIgCgRiYXNlGAEgASgLMhIuY29yZS5CYXNlUmVzcG9uc2USGQoEbW9kZRgCIAEoCzILLnBsYXRvLk1vZGUSFQoNZGFpbHlfZ2FtZV9pZBgDIAEoBSJuChdQdWJsaWNEYWlseUdhbWVSZXNwb25zZRIgCgRiYXNlGAEgASgLMhIuY29yZS5CYXNlUmVzcG9uc2USMQoRcHVibGljX2RhaWx5X2dhbWUYAiABKAsyFi5wbGF0by5QdWJsaWNEYWlseUdhbWUibgoXRGV0YWlsRGFpbHlHYW1lUmVzcG9uc2USIAoEYmFzZRgBIAEoCzISLmNvcmUuQmFzZVJlc3BvbnNlEjEKEWRldGFpbF9kYWlseV9nYW1lGAIgASgLMhYucGxhdG8uRGV0YWlsRGFpbHlHYW1lImkKFEF0dGVtcHRBbnN3ZXJSZXF1ZXN0EicKBGJhc2UYASABKAsyES5jb3JlLkJhc2VSZXF1ZXN0Qga6SAPIAQESFQoNZGFpbHlfZ2FtZV9pZBgCIAEoBRIRCglhbnN3ZXJfaWQYBCABKAUikAEKFUF0dGVtcHRBbnN3ZXJSZXNwb25zZRIgCgRiYXNlGAEgASgLMhIuY29yZS5CYXNlUmVzcG9uc2USOQoVYXR0ZW1wdF9kZXRhaWxfYW5zd2VyGAMgASgLMhoucGxhdG8uQXR0ZW1wdERldGFpbEFuc3dlchIaCgVjbHVlcxgEIAMoCzILLnBsYXRvLkNsdWUikgEKFkF0dGVtcHRIaXN0b3J5UmVzcG9uc2USIAoEYmFzZRgBIAEoCzISLmNvcmUuQmFzZVJlc3BvbnNlEjoKFmF0dGVtcHRfZGV0YWlsX2Fuc3dlcnMYAiADKAsyGi5wbGF0by5BdHRlbXB0RGV0YWlsQW5zd2VyEhoKBWNsdWVzGAUgAygLMgsucGxhdG8uQ2x1ZTKmAwoVUGxhdG9EYWlseUdhbWVTZXJ2aWNlElUKFkdldERldGFpbERhaWx5R2FtZUJ5SWQSGS5wbGF0by5EYWlseUdhbWVJZFJlcXVlc3QaHi5wbGF0by5EZXRhaWxEYWlseUdhbWVSZXNwb25zZSIAEkwKFEdldE1vZGVEYWlseUdhbWVCeUlkEhQucGxhdG8uTW9kZUlkUmVxdWVzdBocLnBsYXRvLk1vZGVEYWlseUdhbWVSZXNwb25zZSIAEkwKEkdldFB1YmxpY0RhaWx5R2FtZRIULnBsYXRvLk1vZGVJZFJlcXVlc3QaHi5wbGF0by5QdWJsaWNEYWlseUdhbWVSZXNwb25zZSIAEkwKDUF0dGVtcHRBbnN3ZXISGy5wbGF0by5BdHRlbXB0QW5zd2VyUmVxdWVzdBocLnBsYXRvLkF0dGVtcHRBbnN3ZXJSZXNwb25zZSIAEkwKDkF0dGVtcHRIaXN0b3J5EhkucGxhdG8uRGFpbHlHYW1lSWRSZXF1ZXN0Gh0ucGxhdG8uQXR0ZW1wdEhpc3RvcnlSZXNwb25zZSIAQhFaD3BsYXRvL2FwaS9wcm90b2IGcHJvdG8z",
-    [file_core, file_plato_generic, file_plato_object],
-  );
+export const file_plato_dailygame: GenFile = /*@__PURE__*/
+  fileDesc("ChVwbGF0by9kYWlseWdhbWUucHJvdG8SBXBsYXRvImsKFU1vZGVEYWlseUdhbWVSZXNwb25zZRIgCgRiYXNlGAEgASgLMhIuY29yZS5CYXNlUmVzcG9uc2USGQoEbW9kZRgCIAEoCzILLnBsYXRvLk1vZGUSFQoNZGFpbHlfZ2FtZV9pZBgDIAEoBSJuChdQdWJsaWNEYWlseUdhbWVSZXNwb25zZRIgCgRiYXNlGAEgASgLMhIuY29yZS5CYXNlUmVzcG9uc2USMQoRcHVibGljX2RhaWx5X2dhbWUYAiABKAsyFi5wbGF0by5QdWJsaWNEYWlseUdhbWUibgoXRGV0YWlsRGFpbHlHYW1lUmVzcG9uc2USIAoEYmFzZRgBIAEoCzISLmNvcmUuQmFzZVJlc3BvbnNlEjEKEWRldGFpbF9kYWlseV9nYW1lGAIgASgLMhYucGxhdG8uRGV0YWlsRGFpbHlHYW1lImkKFEF0dGVtcHRBbnN3ZXJSZXF1ZXN0EicKBGJhc2UYASABKAsyES5jb3JlLkJhc2VSZXF1ZXN0Qga6SAPIAQESFQoNZGFpbHlfZ2FtZV9pZBgCIAEoBRIRCglhbnN3ZXJfaWQYBCABKAUikAEKFUF0dGVtcHRBbnN3ZXJSZXNwb25zZRIgCgRiYXNlGAEgASgLMhIuY29yZS5CYXNlUmVzcG9uc2USOQoVYXR0ZW1wdF9kZXRhaWxfYW5zd2VyGAMgASgLMhoucGxhdG8uQXR0ZW1wdERldGFpbEFuc3dlchIaCgVjbHVlcxgEIAMoCzILLnBsYXRvLkNsdWUikgEKFkF0dGVtcHRIaXN0b3J5UmVzcG9uc2USIAoEYmFzZRgBIAEoCzISLmNvcmUuQmFzZVJlc3BvbnNlEjoKFmF0dGVtcHRfZGV0YWlsX2Fuc3dlcnMYAiADKAsyGi5wbGF0by5BdHRlbXB0RGV0YWlsQW5zd2VyEhoKBWNsdWVzGAUgAygLMgsucGxhdG8uQ2x1ZTKmAwoVUGxhdG9EYWlseUdhbWVTZXJ2aWNlElUKFkdldERldGFpbERhaWx5R2FtZUJ5SWQSGS5wbGF0by5EYWlseUdhbWVJZFJlcXVlc3QaHi5wbGF0by5EZXRhaWxEYWlseUdhbWVSZXNwb25zZSIAEkwKFEdldE1vZGVEYWlseUdhbWVCeUlkEhQucGxhdG8uTW9kZUlkUmVxdWVzdBocLnBsYXRvLk1vZGVEYWlseUdhbWVSZXNwb25zZSIAEkwKEkdldFB1YmxpY0RhaWx5R2FtZRIULnBsYXRvLk1vZGVJZFJlcXVlc3QaHi5wbGF0by5QdWJsaWNEYWlseUdhbWVSZXNwb25zZSIAEkwKDUF0dGVtcHRBbnN3ZXISGy5wbGF0by5BdHRlbXB0QW5zd2VyUmVxdWVzdBocLnBsYXRvLkF0dGVtcHRBbnN3ZXJSZXNwb25zZSIAEkwKDkF0dGVtcHRIaXN0b3J5EhkucGxhdG8uRGFpbHlHYW1lSWRSZXF1ZXN0Gh0ucGxhdG8uQXR0ZW1wdEhpc3RvcnlSZXNwb25zZSIAQhFaD3BsYXRvL2FwaS9wcm90b2IGcHJvdG8z", [file_core, file_plato_generic, file_plato_object]);
 
 /**
  * @generated from message plato.ModeDailyGameResponse
@@ -64,56 +42,51 @@ export type ModeDailyGameResponse = Message<"plato.ModeDailyGameResponse"> & {
  * Describes the message plato.ModeDailyGameResponse.
  * Use `create(ModeDailyGameResponseSchema)` to create a new message.
  */
-export const ModeDailyGameResponseSchema: GenMessage<ModeDailyGameResponse> =
-  /*@__PURE__*/
+export const ModeDailyGameResponseSchema: GenMessage<ModeDailyGameResponse> = /*@__PURE__*/
   messageDesc(file_plato_dailygame, 0);
 
 /**
  * @generated from message plato.PublicDailyGameResponse
  */
-export type PublicDailyGameResponse =
-  Message<"plato.PublicDailyGameResponse"> & {
-    /**
-     * @generated from field: core.BaseResponse base = 1;
-     */
-    base?: BaseResponse;
+export type PublicDailyGameResponse = Message<"plato.PublicDailyGameResponse"> & {
+  /**
+   * @generated from field: core.BaseResponse base = 1;
+   */
+  base?: BaseResponse;
 
-    /**
-     * @generated from field: plato.PublicDailyGame public_daily_game = 2;
-     */
-    publicDailyGame?: PublicDailyGame;
-  };
+  /**
+   * @generated from field: plato.PublicDailyGame public_daily_game = 2;
+   */
+  publicDailyGame?: PublicDailyGame;
+};
 
 /**
  * Describes the message plato.PublicDailyGameResponse.
  * Use `create(PublicDailyGameResponseSchema)` to create a new message.
  */
-export const PublicDailyGameResponseSchema: GenMessage<PublicDailyGameResponse> =
-  /*@__PURE__*/
+export const PublicDailyGameResponseSchema: GenMessage<PublicDailyGameResponse> = /*@__PURE__*/
   messageDesc(file_plato_dailygame, 1);
 
 /**
  * @generated from message plato.DetailDailyGameResponse
  */
-export type DetailDailyGameResponse =
-  Message<"plato.DetailDailyGameResponse"> & {
-    /**
-     * @generated from field: core.BaseResponse base = 1;
-     */
-    base?: BaseResponse;
+export type DetailDailyGameResponse = Message<"plato.DetailDailyGameResponse"> & {
+  /**
+   * @generated from field: core.BaseResponse base = 1;
+   */
+  base?: BaseResponse;
 
-    /**
-     * @generated from field: plato.DetailDailyGame detail_daily_game = 2;
-     */
-    detailDailyGame?: DetailDailyGame;
-  };
+  /**
+   * @generated from field: plato.DetailDailyGame detail_daily_game = 2;
+   */
+  detailDailyGame?: DetailDailyGame;
+};
 
 /**
  * Describes the message plato.DetailDailyGameResponse.
  * Use `create(DetailDailyGameResponseSchema)` to create a new message.
  */
-export const DetailDailyGameResponseSchema: GenMessage<DetailDailyGameResponse> =
-  /*@__PURE__*/
+export const DetailDailyGameResponseSchema: GenMessage<DetailDailyGameResponse> = /*@__PURE__*/
   messageDesc(file_plato_dailygame, 2);
 
 /**
@@ -140,8 +113,7 @@ export type AttemptAnswerRequest = Message<"plato.AttemptAnswerRequest"> & {
  * Describes the message plato.AttemptAnswerRequest.
  * Use `create(AttemptAnswerRequestSchema)` to create a new message.
  */
-export const AttemptAnswerRequestSchema: GenMessage<AttemptAnswerRequest> =
-  /*@__PURE__*/
+export const AttemptAnswerRequestSchema: GenMessage<AttemptAnswerRequest> = /*@__PURE__*/
   messageDesc(file_plato_dailygame, 3);
 
 /**
@@ -168,8 +140,7 @@ export type AttemptAnswerResponse = Message<"plato.AttemptAnswerResponse"> & {
  * Describes the message plato.AttemptAnswerResponse.
  * Use `create(AttemptAnswerResponseSchema)` to create a new message.
  */
-export const AttemptAnswerResponseSchema: GenMessage<AttemptAnswerResponse> =
-  /*@__PURE__*/
+export const AttemptAnswerResponseSchema: GenMessage<AttemptAnswerResponse> = /*@__PURE__*/
   messageDesc(file_plato_dailygame, 4);
 
 /**
@@ -196,8 +167,7 @@ export type AttemptHistoryResponse = Message<"plato.AttemptHistoryResponse"> & {
  * Describes the message plato.AttemptHistoryResponse.
  * Use `create(AttemptHistoryResponseSchema)` to create a new message.
  */
-export const AttemptHistoryResponseSchema: GenMessage<AttemptHistoryResponse> =
-  /*@__PURE__*/
+export const AttemptHistoryResponseSchema: GenMessage<AttemptHistoryResponse> = /*@__PURE__*/
   messageDesc(file_plato_dailygame, 5);
 
 /**
@@ -211,7 +181,7 @@ export const PlatoDailyGameService: GenService<{
     methodKind: "unary";
     input: typeof DailyGameIdRequestSchema;
     output: typeof DetailDailyGameResponseSchema;
-  };
+  },
   /**
    * @generated from rpc plato.PlatoDailyGameService.GetModeDailyGameById
    */
@@ -219,7 +189,7 @@ export const PlatoDailyGameService: GenService<{
     methodKind: "unary";
     input: typeof ModeIdRequestSchema;
     output: typeof ModeDailyGameResponseSchema;
-  };
+  },
   /**
    * @generated from rpc plato.PlatoDailyGameService.GetPublicDailyGame
    */
@@ -227,7 +197,7 @@ export const PlatoDailyGameService: GenService<{
     methodKind: "unary";
     input: typeof ModeIdRequestSchema;
     output: typeof PublicDailyGameResponseSchema;
-  };
+  },
   /**
    * @generated from rpc plato.PlatoDailyGameService.AttemptAnswer
    */
@@ -235,7 +205,7 @@ export const PlatoDailyGameService: GenService<{
     methodKind: "unary";
     input: typeof AttemptAnswerRequestSchema;
     output: typeof AttemptAnswerResponseSchema;
-  };
+  },
   /**
    * @generated from rpc plato.PlatoDailyGameService.AttemptHistory
    */
@@ -243,5 +213,7 @@ export const PlatoDailyGameService: GenService<{
     methodKind: "unary";
     input: typeof DailyGameIdRequestSchema;
     output: typeof AttemptHistoryResponseSchema;
-  };
-}> = /*@__PURE__*/ serviceDesc(file_plato_dailygame, 0);
+  },
+}> = /*@__PURE__*/
+  serviceDesc(file_plato_dailygame, 0);
+
