@@ -7,10 +7,8 @@ const linkedInRegex =
 
 // home page form schema
 export const homePageFormSchema = z.object({
-  linkedInUrl: z
-    .string()
-    .url("Must be a valid URL")
-    .regex(linkedInRegex, "Must be a valid LinkedIn profile URL"),
+  context: z
+    .string().min(1, "Context is required")
 });
 
 // progressive disclosure form input

@@ -39,6 +39,7 @@ import { homePageFormSchema } from "@/lib/formSchema";
 import HomePageNavigationBar from "@/components/app/homepage/homePageNavigationBar";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { resumeClient } from "@/lib/janus/client/phylira";
 
 export default function HomePage() {
   return (
@@ -108,7 +109,7 @@ function HomePageHero() {
           <h4>Over 10000+ users</h4>
         </div>
       </div>
-      <CopyableText text="https://www.linkedin.com/in/christopher-hu-921ab421b/" />
+      {/* <CopyableText text="https://www.linkedin.com/in/christopher-hu-921ab421b/" /> */}
       <div className="w-full sm:w-[80%] md:w-[60%]">
         <HomePageForm />
       </div>
@@ -121,7 +122,7 @@ function HomePageForm() {
   const form = useForm<z.infer<typeof homePageFormSchema>>({
     resolver: zodResolver(homePageFormSchema),
     defaultValues: {
-      linkedInUrl: "",
+      context: "",
     },
   });
 
@@ -129,19 +130,28 @@ function HomePageForm() {
   function onSubmit(values: z.infer<typeof homePageFormSchema>) {
     console.log(values);
     router.push("/resume");
+
+    resumeClient.generateResume({
+      context: "My name is Christopher Hu, my email is christopher@example.com, my phone number is +62 812 3456 7890, and I am based in Jakarta, Indonesia. I am applying for the role of Software Engineer (Flutter & React). I am a detail-oriented software engineer with over 4 years of experience building mobile and web applications using Flutter, React, and TypeScript, and I am passionate about creating user-friendly and scalable solutions. My work experience includes my current role as a Mobile Frontend Developer at PT Tech Solutions (2021–Present), where I built and maintained Flutter booking applications that increased user retention by 20%, integrated APIs for real-time room booking, and optimized API response time by 35%. Previously, I worked as a Frontend Developer at Creative Dev Studio (2019–2021), where I developed React websites that improved load speed by 40% and implemented reusable UI components that reduced development time by 25%. I hold a Bachelor’s Degree in Computer Science from the University of Indonesia (2015–2019). My skills include Flutter, React, TypeScript, JavaScript, HTML, CSS, REST API, Git, and Firebase. My projects include a Room Booking App with real-time availability and receptionist check-in/out features, and a Resume Builder Web App with an ATS-friendly preview. I speak English fluently and am a native Indonesian speaker. Please highlight my achievements with measurable results and tailor the wording to appeal to recruiters in my target industry",
+    }).then((response) => {
+        console.log("Resume generated successfully:", response.generatedResume);
+
+        console.log("Resume generated successfully:", response.generatedResume?.structuredData?.experience[0].endDate);
+        // Handle success, e.g., navigate to the resume page or show a success message
+      })
   }
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
         <FormField
           control={form.control}
-          name="linkedInUrl"
+          name="context"
           render={({ field }) => (
             <FormItem className="w-full">
               <FormControl className="w-full">
                 <Input
                   className="w-full"
-                  placeholder="https://www.linkedin.com/in/christopher-hu-921ab421b/"
+                  placeholder="Describe Who you are and what you do"
                   {...field}
                 />
               </FormControl>
